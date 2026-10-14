@@ -1,0 +1,4046 @@
+{
+  "date": "2026-10-14",
+  "scope": "Filesystem/source inspection; no live DB or MPQ re-audit",
+  "head": "a6f7e6d0a36b8f5bb6900a6cd79850ccb2c45bdb",
+  "registry": {
+    "schema_version": 1,
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11
+    ],
+    "start_profiles": {
+      "elwynn": {
+        "map": 0,
+        "zone": 12,
+        "x": -8949.95,
+        "y": -132.493,
+        "z": 83.5312,
+        "orientation": 0.0
+      },
+      "durotar": {
+        "map": 1,
+        "zone": 14,
+        "x": -618.518,
+        "y": -4251.67,
+        "z": 38.718,
+        "orientation": 0.0
+      },
+      "dun_morogh": {
+        "map": 0,
+        "zone": 1,
+        "x": -6240.32,
+        "y": 331.033,
+        "z": 382.758,
+        "orientation": 6.17716
+      },
+      "teldrassil": {
+        "map": 1,
+        "zone": 141,
+        "x": 10311.3,
+        "y": 832.463,
+        "z": 1326.41,
+        "orientation": 5.69632
+      },
+      "tirisfal": {
+        "map": 0,
+        "zone": 85,
+        "x": 1676.71,
+        "y": 1678.31,
+        "z": 121.67,
+        "orientation": 2.70526
+      },
+      "mulgore": {
+        "map": 1,
+        "zone": 215,
+        "x": -2917.58,
+        "y": -257.98,
+        "z": 52.9968,
+        "orientation": 0.0
+      },
+      "eversong": {
+        "map": 530,
+        "zone": 3431,
+        "x": 10349.6,
+        "y": -6357.29,
+        "z": 33.4026,
+        "orientation": 5.31605
+      },
+      "azuremyst": {
+        "map": 530,
+        "zone": 3526,
+        "x": -3961.64,
+        "y": -13931.2,
+        "z": 100.615,
+        "orientation": 2.08364
+      },
+      "ebon_hold": {
+        "map": 609,
+        "zone": 4298,
+        "x": 2358.44,
+        "y": -5666.9,
+        "z": 426.023,
+        "orientation": 3.65997
+      }
+    },
+    "playable": [
+      {
+        "id": 50,
+        "species_key": "haranir",
+        "display_name": "Haranir",
+        "faction": "alliance",
+        "species_selection": true,
+        "start_profile": "teldrassil",
+        "asset_owner": "retroporter_haranir",
+        "legacy_mask_race": 4,
+        "visual_base_race": 4
+      },
+      {
+        "id": 51,
+        "species_key": "haranir",
+        "display_name": "Haranir",
+        "faction": "horde",
+        "species_selection": true,
+        "start_profile": "durotar",
+        "asset_owner": "retroporter_haranir",
+        "legacy_mask_race": 8,
+        "visual_base_race": 4
+      },
+      {
+        "id": 46,
+        "species_key": "highmountain",
+        "display_name": "Highmountain Tauren",
+        "faction": "horde",
+        "start_profile": "mulgore",
+        "asset_owner": "retroporter_highmountain",
+        "legacy_mask_race": 6,
+        "visual_base_race": 6
+      },
+      {
+        "id": 1,
+        "species_key": "human",
+        "display_name": "Human",
+        "faction": "alliance",
+        "start_profile": "elwynn",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 2,
+        "species_key": "orc",
+        "display_name": "Orc",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 3,
+        "species_key": "dwarf",
+        "display_name": "Dwarf",
+        "faction": "alliance",
+        "start_profile": "dun_morogh",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 4,
+        "species_key": "night_elf",
+        "display_name": "Night Elf",
+        "faction": "alliance",
+        "start_profile": "teldrassil",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 5,
+        "species_key": "undead_scourge",
+        "display_name": "Undead (Scourge)",
+        "faction": "horde",
+        "start_profile": "tirisfal",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 6,
+        "species_key": "tauren",
+        "display_name": "Tauren",
+        "faction": "horde",
+        "start_profile": "mulgore",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 7,
+        "species_key": "gnome",
+        "display_name": "Gnome",
+        "faction": "alliance",
+        "start_profile": "dun_morogh",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 8,
+        "species_key": "troll",
+        "display_name": "Troll",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 9,
+        "species_key": "goblin",
+        "display_name": "Goblin",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "worgoblin_technical_base"
+      },
+      {
+        "id": 10,
+        "species_key": "blood_elf",
+        "display_name": "Blood Elf",
+        "faction": "horde",
+        "start_profile": "eversong",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 11,
+        "species_key": "draenei",
+        "display_name": "Draenei",
+        "faction": "alliance",
+        "start_profile": "azuremyst",
+        "asset_owner": "leeviathan_baseline"
+      },
+      {
+        "id": 12,
+        "species_key": "worgen",
+        "display_name": "Worgen",
+        "faction": "alliance",
+        "start_profile": "teldrassil",
+        "asset_owner": "worgoblin_technical_base"
+      },
+      {
+        "id": 13,
+        "species_key": "high_elf",
+        "display_name": "High Elf",
+        "faction": "alliance",
+        "start_profile": "elwynn",
+        "asset_owner": "blood_elf_assets"
+      },
+      {
+        "id": 14,
+        "species_key": "broken",
+        "display_name": "Broken",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "broken_player_assets"
+      },
+      {
+        "id": 15,
+        "species_key": "sethrak",
+        "display_name": "Sethrak",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "worgoblin_sethrak"
+      },
+      {
+        "id": 16,
+        "species_key": "eredar",
+        "display_name": "Eredar",
+        "faction": "horde",
+        "faction_status": "provisional",
+        "start_profile": "durotar",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 17,
+        "species_key": "nightborne",
+        "display_name": "Nightborne",
+        "faction": "horde",
+        "start_profile": "eversong",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 18,
+        "species_key": "pandaren",
+        "display_name": "Pandaren",
+        "faction": "alliance",
+        "species_selection": true,
+        "start_profile": "elwynn",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 19,
+        "species_key": "void_elf",
+        "display_name": "Void Elf",
+        "faction": "alliance",
+        "start_profile": "elwynn",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 20,
+        "species_key": "vulpera",
+        "display_name": "Vulpera",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 21,
+        "species_key": "lightforged_draenei",
+        "display_name": "Lightforged Draenei",
+        "faction": "alliance",
+        "start_profile": "azuremyst",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 22,
+        "species_key": "zandalari_troll",
+        "display_name": "Zandalari Troll",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 23,
+        "species_key": "dark_iron_dwarf",
+        "display_name": "Dark Iron Dwarf",
+        "faction": "alliance",
+        "start_profile": "dun_morogh",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 24,
+        "species_key": "broken",
+        "display_name": "Broken",
+        "faction": "alliance",
+        "species_selection": true,
+        "start_profile": "azuremyst",
+        "asset_owner": "broken_player_assets"
+      },
+      {
+        "id": 25,
+        "species_key": "forsaken",
+        "display_name": "Forsaken",
+        "faction": "alliance",
+        "start_profile": "elwynn",
+        "asset_owner": "boneless_undead_assets"
+      },
+      {
+        "id": 26,
+        "species_key": "pandaren",
+        "display_name": "Pandaren",
+        "faction": "horde",
+        "species_selection": true,
+        "start_profile": "durotar",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 27,
+        "species_key": "broken",
+        "display_name": "Broken",
+        "faction": "horde",
+        "species_selection": true,
+        "start_profile": "durotar",
+        "asset_owner": "broken_player_assets"
+      },
+      {
+        "id": 28,
+        "species_key": "dracthyr",
+        "display_name": "Dracthyr",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "shadowlands_characters"
+      },
+      {
+        "id": 45,
+        "species_key": "maghar_orc",
+        "display_name": "Mag'har Orc",
+        "faction": "horde",
+        "start_profile": "durotar",
+        "asset_owner": "retroporter_maghar",
+        "legacy_mask_race": 2,
+        "visual_base_race": 2
+      },
+      {
+        "id": 52,
+        "species_key": "skyborne",
+        "display_name": "High Order Skyborne",
+        "faction": "alliance",
+        "start_profile": "elwynn",
+        "asset_owner": "retroporter_skyborne",
+        "legacy_mask_race": 13,
+        "visual_base_race": 10
+      },
+      {
+        "id": 53,
+        "species_key": "skyborne",
+        "display_name": "Windshaper Skyborne",
+        "faction": "horde",
+        "start_profile": "eversong",
+        "asset_owner": "retroporter_skyborne",
+        "legacy_mask_race": 10,
+        "visual_base_race": 10
+      },
+      {
+        "id": 43,
+        "species_key": "darkfallen",
+        "display_name": "Darkfallen",
+        "faction": "alliance",
+        "mask": 2147483648,
+        "start_profile": "tirisfal",
+        "asset_owner": "playable_darkfallen"
+      },
+      {
+        "id": 44,
+        "species_key": "darkfallen",
+        "display_name": "Darkfallen",
+        "faction": "horde",
+        "mask": 2147483648,
+        "start_profile": "tirisfal",
+        "asset_owner": "playable_darkfallen"
+      },
+      {
+        "id": 47,
+        "species_key": "mechagnome",
+        "display_name": "Mechagnome",
+        "faction": "alliance",
+        "start_profile": "dun_morogh",
+        "asset_owner": "retroporter_mechagnome",
+        "legacy_mask_race": 7,
+        "visual_base_race": 7
+      },
+      {
+        "id": 48,
+        "species_key": "earthen",
+        "display_name": "Earthen",
+        "faction": "alliance",
+        "species_selection": true,
+        "start_profile": "dun_morogh",
+        "asset_owner": "retroporter_earthen",
+        "legacy_mask_race": 3,
+        "visual_base_race": 3
+      },
+      {
+        "id": 49,
+        "species_key": "earthen",
+        "display_name": "Earthen",
+        "faction": "horde",
+        "species_selection": true,
+        "start_profile": "durotar",
+        "asset_owner": "retroporter_earthen",
+        "legacy_mask_race": 2,
+        "visual_base_race": 3
+      },
+      {
+        "id": 54,
+        "species_key": "naga",
+        "display_name": "Naga",
+        "faction": "horde",
+        "asset_owner": "retroporter_naga",
+        "legacy_mask_race": 10,
+        "visual_base_race": 10,
+        "start_profile": "eversong",
+        "supported_genders": [
+          0,
+          1
+        ],
+        "species_selection": false
+      },
+      {
+        "id": 55,
+        "species_key": "tuskarr",
+        "display_name": "Tuskarr",
+        "faction": "alliance",
+        "asset_owner": "retroporter_tuskarr",
+        "legacy_mask_race": 3,
+        "visual_base_race": 3,
+        "start_profile": "dun_morogh",
+        "supported_genders": [
+          0
+        ],
+        "species_selection": false
+      },
+      {
+        "id": 56,
+        "species_key": "vrykul",
+        "display_name": "Vrykul",
+        "faction": "alliance",
+        "asset_owner": "retroporter_vrykul",
+        "legacy_mask_race": 1,
+        "visual_base_race": 1,
+        "start_profile": "elwynn",
+        "supported_genders": [
+          0,
+          1
+        ],
+        "species_selection": true
+      },
+      {
+        "id": 57,
+        "species_key": "vrykul",
+        "display_name": "Vrykul",
+        "faction": "horde",
+        "asset_owner": "retroporter_vrykul",
+        "legacy_mask_race": 2,
+        "visual_base_race": 1,
+        "start_profile": "durotar",
+        "supported_genders": [
+          0,
+          1
+        ],
+        "species_selection": true
+      },
+      {
+        "id": 58,
+        "species_key": "thinhuman",
+        "display_name": "Forgotten",
+        "faction": "alliance",
+        "asset_owner": "retroporter_thinhuman",
+        "legacy_mask_race": 1,
+        "visual_base_race": 1,
+        "start_profile": "elwynn",
+        "supported_genders": [
+          0
+        ],
+        "species_selection": true
+      },
+      {
+        "id": 59,
+        "species_key": "thinhuman",
+        "display_name": "Forgotten",
+        "faction": "horde",
+        "asset_owner": "retroporter_thinhuman",
+        "legacy_mask_race": 2,
+        "visual_base_race": 1,
+        "start_profile": "durotar",
+        "supported_genders": [
+          0
+        ],
+        "species_selection": true
+      },
+      {
+        "id": 60,
+        "species_key": "ogre",
+        "display_name": "Ogre",
+        "faction": "horde",
+        "asset_owner": "retroporter_ogre_furbolg",
+        "legacy_mask_race": 2,
+        "visual_base_race": 2,
+        "start_profile": "durotar",
+        "supported_genders": [
+          0,
+          1
+        ],
+        "species_selection": true
+      },
+      {
+        "id": 61,
+        "species_key": "ogre",
+        "display_name": "Ogre",
+        "faction": "alliance",
+        "asset_owner": "reforged_ogre_alliance",
+        "legacy_mask_race": 1,
+        "visual_base_race": 2,
+        "start_profile": "elwynn",
+        "supported_genders": [
+          0,
+          1
+        ],
+        "species_selection": true
+      },
+      {
+        "id": 62,
+        "species_key": "sethrak_alliance",
+        "display_name": "Sethrak",
+        "faction": "alliance",
+        "species_selection": false,
+        "start_profile": "elwynn",
+        "asset_owner": "animated_sethrak",
+        "legacy_mask_race": 1,
+        "visual_base_race": 11,
+        "supported_genders": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": 63,
+        "species_key": "gnoll_horde",
+        "display_name": "Gnoll",
+        "faction": "horde",
+        "species_selection": false,
+        "start_profile": "durotar",
+        "asset_owner": "retroporter_gnoll",
+        "legacy_mask_race": 2,
+        "visual_base_race": 12,
+        "supported_genders": [
+          0
+        ]
+      },
+      {
+        "id": 64,
+        "species_key": "saberon_horde",
+        "display_name": "Saberon",
+        "faction": "horde",
+        "species_selection": false,
+        "start_profile": "durotar",
+        "asset_owner": "retroporter_saberon",
+        "legacy_mask_race": 2,
+        "visual_base_race": 12,
+        "supported_genders": [
+          0
+        ]
+      },
+      {
+        "id": 65,
+        "species_key": "jinyu_alliance",
+        "display_name": "Jinyu",
+        "faction": "alliance",
+        "species_selection": false,
+        "start_profile": "elwynn",
+        "asset_owner": "snowzocraft_jinyu",
+        "legacy_mask_race": 1,
+        "visual_base_race": 1,
+        "supported_genders": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": 66,
+        "species_key": "kobold_alliance",
+        "display_name": "Kobold",
+        "faction": "alliance",
+        "species_selection": false,
+        "start_profile": "elwynn",
+        "asset_owner": "supplied_kobold",
+        "legacy_mask_race": 1,
+        "visual_base_race": 20,
+        "supported_genders": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": 68,
+        "species_key": "arakkoa_horde",
+        "display_name": "Arakkoa",
+        "faction": "horde",
+        "species_selection": false,
+        "start_profile": "durotar",
+        "asset_owner": "supplied_arakkoa",
+        "legacy_mask_race": 2,
+        "visual_base_race": 2,
+        "supported_genders": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": 69,
+        "species_key": "drakonid_alliance",
+        "display_name": "Drakonid",
+        "faction": "alliance",
+        "species_selection": false,
+        "start_profile": "elwynn",
+        "asset_owner": "retroporter_drakonid",
+        "legacy_mask_race": 1,
+        "visual_base_race": 6,
+        "supported_genders": [
+          0
+        ]
+      },
+      {
+        "id": 70,
+        "species_key": "drakonid_horde",
+        "display_name": "Drakonid",
+        "faction": "horde",
+        "species_selection": false,
+        "start_profile": "durotar",
+        "asset_owner": "retroporter_drakonid",
+        "legacy_mask_race": 2,
+        "visual_base_race": 6,
+        "supported_genders": [
+          0
+        ]
+      }
+    ],
+    "npc_only": [
+      {
+        "id": 32,
+        "name": "Skeleton",
+        "legacy_id": 15,
+        "not_playable": true
+      },
+      {
+        "id": 33,
+        "name": "Vrykul",
+        "legacy_id": 16,
+        "not_playable": true
+      },
+      {
+        "id": 34,
+        "name": "Tuskarr",
+        "legacy_id": 17,
+        "not_playable": true
+      },
+      {
+        "id": 35,
+        "name": "Forest Troll",
+        "legacy_id": 18,
+        "not_playable": true
+      },
+      {
+        "id": 36,
+        "name": "Taunka",
+        "legacy_id": 19,
+        "not_playable": true
+      },
+      {
+        "id": 37,
+        "name": "Northrend Skeleton",
+        "legacy_id": 20,
+        "not_playable": true
+      },
+      {
+        "id": 38,
+        "name": "Ice Troll",
+        "legacy_id": 21,
+        "not_playable": true
+      },
+      {
+        "id": 39,
+        "name": "Naga",
+        "legacy_id": 22,
+        "not_playable": true
+      },
+      {
+        "id": 40,
+        "name": "Gilnean",
+        "legacy_id": 23,
+        "not_playable": true
+      },
+      {
+        "id": 41,
+        "name": "Fel Orc",
+        "legacy_id": 24,
+        "not_playable": true
+      },
+      {
+        "id": 42,
+        "name": "Broken NPC",
+        "legacy_id": 25,
+        "not_playable": true
+      },
+      {
+        "id": 67,
+        "name": "Kobold Horde (retired)",
+        "not_playable": true
+      }
+    ],
+    "faction_pairs": [
+      {
+        "species_key": "haranir",
+        "alliance_id": 50,
+        "horde_id": 51
+      },
+      {
+        "species_key": "skyborne",
+        "alliance_id": 52,
+        "horde_id": 53
+      },
+      {
+        "species_key": "pandaren",
+        "alliance_id": 18,
+        "horde_id": 26
+      },
+      {
+        "species_key": "broken",
+        "alliance_id": 24,
+        "horde_id": 27
+      },
+      {
+        "species_key": "earthen",
+        "alliance_id": 48,
+        "horde_id": 49
+      },
+      {
+        "species_key": "vrykul",
+        "alliance_id": 56,
+        "horde_id": 57
+      },
+      {
+        "species_key": "thinhuman",
+        "alliance_id": 58,
+        "horde_id": 59
+      },
+      {
+        "species_key": "ogre",
+        "alliance_id": 61,
+        "horde_id": 60
+      }
+    ],
+    "sources": {
+      "leeviathan_baseline": "RaceStuff/Leeviathan-s_WoD_Character_Models_(3.3.5a)/patch-H.MPQ",
+      "broken_player_assets": "RaceStuff/Leeviathan-s_WoD_Character_Models_(3.3.5a)/OPTIONAL - The Broken/BrokenPlayer_patch-J.MPQ",
+      "broken_npc_assets": "RaceStuff/Leeviathan-s_WoD_Character_Models_(3.3.5a)/OPTIONAL - The Broken/BrokenNPC_patch-J.MPQ",
+      "boneless_undead_assets": "RaceStuff/Leeviathan-s_WoD_Character_Models_(3.3.5a)/OPTIONAL - Boneless Undead/patch-I.MPQ",
+      "worgoblin_technical_base": "RaceStuff/mod-worgoblin-high-elf-master/data/patch-A.MPQ",
+      "worgoblin_f002": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-002_move-npc-races",
+      "worgoblin_f029": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-029_mod-arac",
+      "worgoblin_f030": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-030_mod-worgoblin",
+      "worgoblin_f031": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-031_mod-azerothcore-high-elf",
+      "worgoblin_f032": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-032_mod-maghar",
+      "worgoblin_sethrak": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-033_mod-playable-sethrak",
+      "worgoblin_f040": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-040_mod-druid-forms",
+      "worgoblin_f041": "RaceStuff/mod-worgoblin-high-elf-master/modpaks/F-041_mod-extra-models",
+      "shadowlands_characters": "RaceStuff/Shadowlands to WotLK/Character",
+      "playable_darkfallen": "NewModels/_Other/PlayableDarkfallen/Darkfallen",
+      "retroporter_maghar": "G:/RetroPorterWork/maghar/output/patch-root",
+      "retroporter_skyborne": "G:/RetroPorterWork/skyborne/integration/patch-root",
+      "shadowlands_dbc": "RaceStuff/Shadowlands to WotLK/DBC/enUS/DBFilesClient",
+      "shadowlands_login": "RaceStuff/Shadowlands login screen mix",
+      "worgoblin_hd": "RaceStuff/worgoblin HD patch",
+      "retroporter_mechagnome": "G:/RetroPorterWork/mechagnome/output/patch-root",
+      "retroporter_earthen": "G:/RetroPorterWork/earthen/integration/patch-root",
+      "retroporter_naga": "G:\\RetroPorterWork\\naga\\integration\\patch-root",
+      "retroporter_tuskarr": "G:\\RetroPorterWork\\tuskarr\\integration\\patch-root",
+      "retroporter_vrykul": "G:\\RetroPorterWork\\vrykul\\integration\\patch-root",
+      "retroporter_thinhuman": "G:\\RetroPorterWork\\thinhuman\\integration\\patch-root",
+      "animated_sethrak": "C:\\Users\\Zach\\.codex\\tmp\\sethrak-playable\\assets",
+      "retroporter_gnoll": "C:\\Users\\Zach\\.codex\\tmp\\gnoll-horde-deploy-20261006\\assets",
+      "retroporter_saberon": "C:\\Users\\Zach\\.codex\\tmp\\saberon-playable\\assets",
+      "snowzocraft_jinyu": "G:\\RetroPorterWork\\jinyu\\stage-20261008\\assets",
+      "supplied_kobold": "G:\\RetroPorterWork\\kobold\\options-20261011\\assets",
+      "supplied_arakkoa": "G:\\RetroPorterWork\\arakkoa\\stage-20261011\\assets",
+      "retroporter_drakonid": "G:\\RetroPorterWork\\drakonid\\deploy\\assets"
+    }
+  },
+  "allocation": {
+    "schema_version": 1,
+    "race_ids": {
+      "maghar": [
+        45
+      ],
+      "highmountain": [
+        46
+      ],
+      "mechagnome": [
+        47
+      ],
+      "earthen": [
+        48,
+        49
+      ],
+      "haranir": [
+        50,
+        51
+      ],
+      "skyborne": [
+        52,
+        53
+      ],
+      "vulpera": [
+        20
+      ],
+      "naga": [
+        54
+      ],
+      "tuskarr": [
+        55
+      ],
+      "vrykul": [
+        56,
+        57
+      ],
+      "thinhuman": [
+        58,
+        59
+      ],
+      "ogre": [
+        60
+      ],
+      "sethrak": [
+        62
+      ],
+      "gnoll": [
+        63
+      ],
+      "ogre_alliance": [
+        61
+      ],
+      "saberon": [
+        64
+      ],
+      "jinyu": [
+        65
+      ],
+      "kobold_alliance": [
+        66
+      ],
+      "kobold_horde": [
+        67
+      ],
+      "arakkoa_horde": [
+        68
+      ],
+      "drakonid_alliance": [
+        69
+      ],
+      "drakonid_horde": [
+        70
+      ]
+    },
+    "dbc_ranges": {
+      "CreatureModelData": [
+        120000,
+        120199
+      ],
+      "CreatureDisplayInfo": [
+        60030,
+        60069
+      ],
+      "CreatureDisplayInfoExtra": [
+        60000,
+        60999
+      ],
+      "CharSections": [
+        450000,
+        1119299
+      ],
+      "CharHairGeosets": [
+        450000,
+        1118399
+      ],
+      "CharHairTextures": [
+        450000,
+        1100999
+      ],
+      "BarberShopStyle": [
+        450000,
+        1118399
+      ],
+      "CharStartOutfit": [
+        21000,
+        22219
+      ],
+      "NameGen": [
+        22000,
+        98999
+      ]
+    },
+    "race_allocations": {
+      "haranir": {
+        "CreatureModelData": {
+          "male": 120055,
+          "female": 120056
+        },
+        "CreatureDisplayInfo": {
+          "male": 60038,
+          "female": 60039
+        },
+        "CharSections": [
+          451000,
+          454999
+        ],
+        "CharHairGeosets": [
+          451000,
+          451099
+        ],
+        "CharHairTextures": [
+          451000,
+          451099
+        ],
+        "BarberShopStyle": [
+          455200,
+          458199
+        ],
+        "CharStartOutfit": [
+          21400,
+          21499
+        ],
+        "NameGen": [
+          34000,
+          35999
+        ]
+      },
+      "earthen": {
+        "CreatureModelData": {
+          "male": 120051,
+          "female": 120054
+        },
+        "CreatureDisplayInfo": {
+          "male": 60036,
+          "female": 60037
+        },
+        "CharSections": [
+          593000,
+          599999
+        ],
+        "CharHairGeosets": [
+          450400,
+          450499
+        ],
+        "CharHairTextures": [
+          450400,
+          450499
+        ],
+        "BarberShopStyle": [
+          453000,
+          455199
+        ],
+        "CharStartOutfit": [
+          21300,
+          21399
+        ],
+        "NameGen": [
+          30000,
+          33999
+        ]
+      },
+      "highmountain": {
+        "CreatureModelData": {
+          "male": 120047,
+          "female": 120048
+        },
+        "CreatureDisplayInfo": {
+          "male": 60032,
+          "female": 60033
+        },
+        "CharSections": [
+          590000,
+          592999
+        ],
+        "CharHairGeosets": [
+          450300,
+          450399
+        ],
+        "CharHairTextures": [
+          450300,
+          450399
+        ],
+        "BarberShopStyle": [
+          450100,
+          450499
+        ],
+        "CharStartOutfit": [
+          21100,
+          21199
+        ],
+        "NameGen": [
+          25000,
+          26999
+        ]
+      },
+      "mechagnome": {
+        "CreatureModelData": {
+          "male": 120049,
+          "female": 120050
+        },
+        "CreatureDisplayInfo": {
+          "male": 60034,
+          "female": 60035
+        },
+        "CharSections": [
+          520000,
+          589999
+        ],
+        "CharHairGeosets": [
+          450100,
+          450299
+        ],
+        "CharHairTextures": [
+          450100,
+          450299
+        ],
+        "BarberShopStyle": [
+          452000,
+          452999
+        ],
+        "CharStartOutfit": [
+          21200,
+          21299
+        ],
+        "NameGen": [
+          23000,
+          24999
+        ]
+      },
+      "skyborne": {
+        "CreatureModelData": {
+          "male": 120052,
+          "female": 120053
+        },
+        "CreatureDisplayInfo": {
+          "male": 60044,
+          "female": 60045
+        },
+        "CharSections": [
+          455000,
+          519999
+        ],
+        "CharHairGeosets": [
+          450500,
+          450899
+        ],
+        "CharHairTextures": [
+          450500,
+          450699
+        ],
+        "BarberShopStyle": [
+          450500,
+          451999
+        ],
+        "CharStartOutfit": [
+          21500,
+          21599
+        ],
+        "NameGen": [
+          27000,
+          29999
+        ]
+      },
+      "maghar": {
+        "CreatureModelData": {
+          "male": 120045,
+          "female": 120046
+        },
+        "CreatureDisplayInfo": {
+          "male": 60030,
+          "female": 60031
+        },
+        "CharSections": [
+          450000,
+          450999
+        ],
+        "CharHairGeosets": [
+          450000,
+          450099
+        ],
+        "CharHairTextures": [
+          450000,
+          450099
+        ],
+        "BarberShopStyle": [
+          450000,
+          450099
+        ],
+        "CharStartOutfit": [
+          21000,
+          21099
+        ],
+        "NameGen": [
+          22000,
+          22999
+        ]
+      },
+      "vulpera": {
+        "CreatureModelData": {
+          "male": 112885,
+          "female": 112886
+        },
+        "CreatureDisplayInfo": {
+          "male": 60006,
+          "female": 60007
+        },
+        "CharSections": [
+          1000000,
+          1000009
+        ],
+        "CharHairGeosets": [
+          1000000,
+          1000001
+        ],
+        "BarberShopStyle": [
+          1000000,
+          1000199
+        ]
+      },
+      "naga": {
+        "CreatureModelData": {
+          "male": 120057,
+          "female": 120058
+        },
+        "CreatureDisplayInfo": {
+          "male": 60048,
+          "female": 60049
+        },
+        "CharSections": [
+          1000200,
+          1000699
+        ],
+        "CharHairGeosets": [
+          1000200,
+          1000699
+        ],
+        "BarberShopStyle": [
+          1000200,
+          1000699
+        ],
+        "CharStartOutfit": [
+          21600,
+          21699
+        ],
+        "NameGen": [
+          36000,
+          41999
+        ]
+      },
+      "tuskarr": {
+        "CreatureModelData": {
+          "male": 120059
+        },
+        "CreatureDisplayInfo": {
+          "male": 60050
+        },
+        "CharSections": [
+          1000700,
+          1001199
+        ],
+        "CharHairGeosets": [
+          1000700,
+          1001199
+        ],
+        "BarberShopStyle": [
+          1000700,
+          1001199
+        ],
+        "CharStartOutfit": [
+          21700,
+          21799
+        ],
+        "NameGen": [
+          42000,
+          47999
+        ]
+      },
+      "vrykul": {
+        "CreatureModelData": {
+          "male": 120060,
+          "female": 120069
+        },
+        "CreatureDisplayInfo": {
+          "male": 60051,
+          "female": 60060
+        },
+        "CharSections": [
+          1001200,
+          1001699
+        ],
+        "CharHairGeosets": [
+          1001200,
+          1001699
+        ],
+        "BarberShopStyle": [
+          1001200,
+          1001699
+        ],
+        "CharStartOutfit": [
+          21800,
+          21899
+        ],
+        "NameGen": [
+          48000,
+          53999
+        ]
+      },
+      "thinhuman": {
+        "CreatureModelData": {
+          "male": 120061
+        },
+        "CreatureDisplayInfo": {
+          "male": 60052
+        },
+        "CharSections": [
+          1001700,
+          1002199
+        ],
+        "CharHairGeosets": [
+          1001700,
+          1002199
+        ],
+        "BarberShopStyle": [
+          1001700,
+          1002199
+        ],
+        "CharStartOutfit": [
+          21900,
+          21999
+        ],
+        "NameGen": [
+          54000,
+          59999
+        ]
+      },
+      "ogre": {
+        "CreatureModelData": {
+          "male": 120062,
+          "female": 120063
+        },
+        "CreatureDisplayInfo": {
+          "male": 60053,
+          "female": 60054
+        },
+        "CharSections": [
+          1100000,
+          1100699
+        ],
+        "CharHairGeosets": [
+          1100000,
+          1100699
+        ],
+        "CharHairTextures": [
+          1100000,
+          1100699
+        ],
+        "BarberShopStyle": [
+          1100000,
+          1100699
+        ],
+        "CharStartOutfit": [
+          22000,
+          22019
+        ],
+        "NameGen": [
+          60000,
+          62999
+        ]
+      },
+      "sethrak": {
+        "CreatureModelData": {
+          "male": 120066,
+          "female": 120067
+        },
+        "CreatureDisplayInfo": {
+          "male": 60057,
+          "female": 60058
+        },
+        "CharSections": [
+          1101000,
+          1101999
+        ],
+        "CharHairGeosets": [
+          1101000,
+          1101099
+        ],
+        "BarberShopStyle": [
+          1101000,
+          1101199
+        ],
+        "CharStartOutfit": [
+          22040,
+          22059
+        ],
+        "NameGen": [
+          66000,
+          68999
+        ]
+      },
+      "gnoll": {
+        "CreatureModelData": {
+          "male": 120068
+        },
+        "CreatureDisplayInfo": {
+          "male": 60059,
+          "female": 0
+        },
+        "CharSections": [
+          1102000,
+          1111999
+        ],
+        "CharHairGeosets": [
+          1102000,
+          1102099
+        ],
+        "BarberShopStyle": [
+          1102000,
+          1102499
+        ],
+        "CharStartOutfit": [
+          22060,
+          22069
+        ],
+        "NameGen": [
+          69000,
+          71999
+        ]
+      },
+      "ogre_alliance": {
+        "CharSections": [
+          1100700,
+          1100999
+        ],
+        "CharHairGeosets": [
+          1100700,
+          1100999
+        ],
+        "BarberShopStyle": [
+          1100700,
+          1100999
+        ],
+        "CharStartOutfit": [
+          22020,
+          22039
+        ],
+        "NameGen": [
+          63000,
+          65999
+        ],
+        "CreatureModelData": {
+          "male": 120062,
+          "female": 120063
+        },
+        "CreatureDisplayInfo": {
+          "male": 60053,
+          "female": 60054
+        }
+      },
+      "vrykul_female": {
+        "CharSections": [
+          1112000,
+          1112299
+        ],
+        "CharHairGeosets": [
+          1112000,
+          1112099
+        ],
+        "BarberShopStyle": [
+          1112000,
+          1112099
+        ],
+        "CharStartOutfit": [
+          22070,
+          22089
+        ],
+        "NameGen": [
+          72000,
+          77999
+        ]
+      },
+      "saberon": {
+        "CreatureModelData": {
+          "male": 120070
+        },
+        "CreatureDisplayInfo": {
+          "male": 60061,
+          "female": 0
+        },
+        "CharSections": [
+          1112300,
+          1113299
+        ],
+        "CharHairGeosets": [
+          1112300,
+          1112399
+        ],
+        "BarberShopStyle": [
+          1112300,
+          1112499
+        ],
+        "CharStartOutfit": [
+          22090,
+          22099
+        ],
+        "NameGen": [
+          78000,
+          80999
+        ]
+      },
+      "jinyu": {
+        "CreatureModelData": {
+          "male": 120071,
+          "female": 120072
+        },
+        "CreatureDisplayInfo": {
+          "male": 60062,
+          "female": 60063
+        },
+        "CharSections": [
+          1113300,
+          1114299
+        ],
+        "CharHairGeosets": [
+          1113300,
+          1113399
+        ],
+        "BarberShopStyle": [
+          1113300,
+          1113499
+        ],
+        "CharStartOutfit": [
+          22100,
+          22119
+        ],
+        "NameGen": [
+          81000,
+          83999
+        ]
+      },
+      "kobold_alliance": {
+        "CreatureModelData": {
+          "female": 120073,
+          "male": 120073
+        },
+        "CreatureDisplayInfo": {
+          "male": 60064,
+          "female": 60064
+        },
+        "CharSections": [
+          1114300,
+          1115299
+        ],
+        "CharHairGeosets": [
+          1114300,
+          1114399
+        ],
+        "BarberShopStyle": [
+          1114300,
+          1114399
+        ],
+        "CharStartOutfit": [
+          22140,
+          22159
+        ],
+        "NameGen": [
+          84000,
+          86999
+        ]
+      },
+      "kobold_horde": {
+        "CreatureModelData": {
+          "female": 120074,
+          "male": 120074
+        },
+        "CreatureDisplayInfo": {
+          "male": 60065,
+          "female": 60065
+        },
+        "CharSections": [
+          1115300,
+          1116299
+        ],
+        "CharHairGeosets": [
+          1115300,
+          1115399
+        ],
+        "BarberShopStyle": [
+          1115300,
+          1115399
+        ],
+        "CharStartOutfit": [
+          22160,
+          22179
+        ],
+        "NameGen": [
+          87000,
+          89999
+        ]
+      },
+      "arakkoa_horde": {
+        "CreatureModelData": {
+          "male": 120075,
+          "female": 120076
+        },
+        "CreatureDisplayInfo": {
+          "male": 60066,
+          "female": 60067
+        },
+        "CharSections": [
+          1116300,
+          1117299
+        ],
+        "CharHairGeosets": [
+          1116300,
+          1116399
+        ],
+        "BarberShopStyle": [
+          1116300,
+          1116499
+        ],
+        "CharStartOutfit": [
+          22180,
+          22199
+        ],
+        "NameGen": [
+          90000,
+          92999
+        ]
+      },
+      "drakonid_alliance": {
+        "CreatureModelData": {
+          "male": 120077
+        },
+        "CreatureDisplayInfo": {
+          "male": 60068,
+          "female": 0
+        },
+        "CharSections": [
+          1117300,
+          1118299
+        ],
+        "CharHairGeosets": [
+          1117300,
+          1117399
+        ],
+        "BarberShopStyle": [
+          1117300,
+          1117399
+        ],
+        "CharStartOutfit": [
+          22200,
+          22209
+        ],
+        "NameGen": [
+          93000,
+          95999
+        ]
+      },
+      "drakonid_horde": {
+        "CreatureModelData": {
+          "male": 120078
+        },
+        "CreatureDisplayInfo": {
+          "male": 60069,
+          "female": 0
+        },
+        "CharSections": [
+          1118300,
+          1119299
+        ],
+        "CharHairGeosets": [
+          1118300,
+          1118399
+        ],
+        "BarberShopStyle": [
+          1118300,
+          1118399
+        ],
+        "CharStartOutfit": [
+          22210,
+          22219
+        ],
+        "NameGen": [
+          96000,
+          98999
+        ]
+      }
+    },
+    "extra_allocations": {
+      "arakkoa_horde": {
+        "SoundEntries": [
+          414401,
+          414406
+        ],
+        "CreatureSoundData": [
+          9045001,
+          9045001
+        ],
+        "Spell": [
+          13990001,
+          13990005
+        ],
+        "EmotesTextSound": [
+          680001,
+          680099
+        ]
+      }
+    }
+  },
+  "manifests": [
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\arakkoa_horde.json",
+      "bytes": 5194,
+      "sha256": "7ef2edd34bbd85ae76cff5792f6fc1b6ae22691c21f5d2d8f32cec7723c658cd",
+      "slug": "arakkoa_horde",
+      "race_ids": [
+        68
+      ],
+      "name": "Arakkoa",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0,
+        1
+      ],
+      "models": {
+        "male": {
+          "model_id": 120075,
+          "display_id": 60066,
+          "model_path": "custom\\arakkoa\\Character\\Arakkoa\\Male\\ArakkoaMale.m2"
+        },
+        "female": {
+          "model_id": 120076,
+          "display_id": 60067,
+          "model_path": "custom\\arakkoa\\Character\\Arakkoa\\Female\\ArakkoaFemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Arakkoa-race",
+        "runtime_patch_root": "G:\\RetroPorterWork\\arakkoa\\stage-20261011\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\drakonid_alliance.json",
+      "bytes": 5467,
+      "sha256": "e1537fe87eaf5291bf87feb5dffc2ea1a2828499993275df526c0eb99c5862ab",
+      "slug": "drakonid_alliance",
+      "race_ids": [
+        69
+      ],
+      "name": "Drakonid",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0
+      ],
+      "models": {
+        "male": {
+          "model_id": 120077,
+          "display_id": 60068,
+          "model_path": "custom\\drakonid\\native\\drakonid.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\drakonid\\converted",
+        "runtime_patch_root": "G:\\RetroPorterWork\\drakonid\\deploy\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\drakonid_horde.json",
+      "bytes": 5453,
+      "sha256": "8dfb179fb22dc369b2c051b43fe7607e70fc094a6991f2f6b8f96990050d0e18",
+      "slug": "drakonid_horde",
+      "race_ids": [
+        70
+      ],
+      "name": "Drakonid",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0
+      ],
+      "models": {
+        "male": {
+          "model_id": 120078,
+          "display_id": 60069,
+          "model_path": "custom\\drakonid\\native\\drakonid.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\drakonid\\converted",
+        "runtime_patch_root": "G:\\RetroPorterWork\\drakonid\\deploy\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\earthen.json",
+      "bytes": 922,
+      "sha256": "d64f89909faea76a45f88649fbf00dadf4d66d28c8e6beb1b17f550e0ed970c4",
+      "slug": "earthen",
+      "race_ids": [
+        48,
+        49
+      ],
+      "name": "Earthen",
+      "appearance_mode": "native-six-byte-codec-v1",
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "source_model_id": 53,
+          "source_display_id": 53,
+          "model_path": "custom\\earthen\\native\\male\\earthendwarfmale.m2"
+        },
+        "female": {
+          "source_model_id": 54,
+          "source_display_id": 54,
+          "model_path": "custom\\earthen\\native\\female\\earthendwarffemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\earthen\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\earthen\\integration\\patch-root"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\furbolg.json",
+      "bytes": 4168,
+      "sha256": "cd2ac0eabffb3e8f4642244c35467130a0ffb4715e02c7281ed39764e6c99557",
+      "slug": "furbolg",
+      "race_ids": [
+        61
+      ],
+      "name": "Furbolg",
+      "appearance_mode": null,
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "model_id": 120064,
+          "display_id": 60055,
+          "donor_model_id": 60003,
+          "donor_display_id": 60591,
+          "path": "Character\\Furbolg\\furbolgrace.m2"
+        },
+        "female": {
+          "model_id": 120065,
+          "display_id": 60056,
+          "donor_model_id": 60004,
+          "donor_display_id": 60592,
+          "path": "Character\\Furbolg\\furbolgrace.m2"
+        }
+      },
+      "external_paths": {}
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\gnoll.json",
+      "bytes": 4802,
+      "sha256": "9386fe50d3ca07438d27aff024734e5d77c5ae65f872b892901fd66eea835536",
+      "slug": "gnoll",
+      "race_ids": [
+        63
+      ],
+      "name": "Gnoll",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0
+      ],
+      "models": {
+        "male": {
+          "model_id": 120068,
+          "display_id": 60059,
+          "model_path": "custom\\gnoll\\native\\gnoll.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\gnoll\\converted",
+        "runtime_patch_root": "C:\\Users\\Zach\\.codex\\tmp\\gnoll-horde-deploy-20261006\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\haranir.json",
+      "bytes": 982,
+      "sha256": "c00ed12145a3a3408ca6b0ba5f37f68a86069768ef51187c14d5ad2759b9580d",
+      "slug": "haranir",
+      "race_ids": [
+        50,
+        51
+      ],
+      "name": "Haranir",
+      "appearance_mode": "native-thirteen-byte-codec-v1",
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "source_model_id": 55,
+          "source_display_id": 55,
+          "model_path": "custom\\haranir\\native\\male\\harronirmale.m2"
+        },
+        "female": {
+          "source_model_id": 56,
+          "source_display_id": 56,
+          "model_path": "custom\\haranir\\native\\female\\harronirfemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\haranir\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\haranir\\integration\\patch-root"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\highmountain.json",
+      "bytes": 951,
+      "sha256": "d01105b89c7e599b955cce34d78820f0160fe735d1cb685b55eeed1f8dcfc77a",
+      "slug": "highmountain",
+      "race_ids": [
+        46
+      ],
+      "name": "Highmountain Tauren",
+      "appearance_mode": "native-six-byte-codec-v1",
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "source_model_id": 59,
+          "source_display_id": 59,
+          "model_path": "custom\\highmountain\\native\\male\\highmountaintaurenmale.m2"
+        },
+        "female": {
+          "source_model_id": 60,
+          "source_display_id": 60,
+          "model_path": "custom\\highmountain\\native\\female\\highmountaintaurenfemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\highmountain\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\highmountain\\integration\\patch-root"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\jinyu.json",
+      "bytes": 3192,
+      "sha256": "ed9578af70b42c20826bfe9fe4f8f37f884bf3a3f5ebbcdc350a7368d39b2fa7",
+      "slug": "jinyu",
+      "race_ids": [
+        65
+      ],
+      "name": "Jinyu",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0,
+        1
+      ],
+      "models": {
+        "male": {
+          "model_id": 120071,
+          "display_id": 60062,
+          "model_path": "custom\\jinyu\\Character\\Jinyu\\Male\\JinyuMale.m2"
+        },
+        "female": {
+          "model_id": 120072,
+          "display_id": 60063,
+          "model_path": "custom\\jinyu\\Character\\Jinyu\\Female\\JinyuFemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\Downloads\\HDWoWModels\\Jinyu_race_files",
+        "runtime_patch_root": "G:\\RetroPorterWork\\jinyu\\stage-20261008\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\kobold_alliance.json",
+      "bytes": 5557,
+      "sha256": "09814c297b58be6a203422bd4bd05e5c0c9457fbe621a6f9d59a362511300e04",
+      "slug": "kobold_alliance",
+      "race_ids": [
+        66
+      ],
+      "name": "Kobold",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0,
+        1
+      ],
+      "models": {
+        "female": {
+          "model_id": 120073,
+          "display_id": 60064,
+          "model_path": "custom\\kobold\\koboldfemale.m2"
+        },
+        "male": {
+          "model_id": 120073,
+          "display_id": 60064,
+          "model_path": "custom\\kobold\\koboldfemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\Kobold\\KoboldColours_FIX",
+        "runtime_patch_root": "G:\\RetroPorterWork\\kobold\\options-20261011\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\kobold_horde.json",
+      "bytes": 5641,
+      "sha256": "f471d0d9e16959c8c13ec3cfe84c8b0b674567b355e5d7fc87cfcca524743d5f",
+      "slug": "kobold_horde",
+      "race_ids": [
+        67
+      ],
+      "name": "Kobold",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0,
+        1
+      ],
+      "models": {
+        "female": {
+          "model_id": 120074,
+          "display_id": 60065,
+          "model_path": "custom\\kobold\\koboldfemale.m2"
+        },
+        "male": {
+          "model_id": 120074,
+          "display_id": 60065,
+          "model_path": "custom\\kobold\\koboldfemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\Kobold\\KoboldTestV25",
+        "runtime_patch_root": "G:\\RetroPorterWork\\kobold\\options-20261011\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\maghar.json",
+      "bytes": 2263,
+      "sha256": "fb4e1f6a113d18129fb65be358023423c3c2aaea30fa57c0dad9ec1d43d2ea26",
+      "slug": "maghar",
+      "race_ids": [
+        45
+      ],
+      "name": "Mag'har Orc",
+      "appearance_mode": null,
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "source_model_id": 51,
+          "source_display_id": 51,
+          "model_path": "custom\\maghar\\character\\orc\\male\\orcmale_hd.m2",
+          "runtime_model_path": "Character\\Orc2\\Male\\OrcMale2.m2",
+          "previous_runtime_model_paths": [
+            "custom\\maghar\\character\\orc\\male\\orcmale_hd.m2",
+            "custom\\maghar\\runtime\\male\\orcmale_hd.m2"
+          ]
+        },
+        "female": {
+          "source_model_id": 52,
+          "source_display_id": 52,
+          "model_path": "custom\\maghar\\character\\orc\\female\\orcfemale_hd.m2",
+          "runtime_model_path": "Character\\Orc2\\Female\\OrcFemale2.m2",
+          "previous_runtime_model_paths": [
+            "custom\\maghar\\character\\orc\\female\\orcfemale_hd.m2",
+            "custom\\maghar\\runtime\\female\\orcfemale_hd.m2"
+          ]
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\maghar\\output\\patch-root",
+        "portrait_sources": {
+          "male": "R:\\Users\\Zach\\Pictures\\Portraits\\Horde\\Charactercreate-races_maghar-male.png",
+          "female": "R:\\Users\\Zach\\Pictures\\Portraits\\Horde\\Charactercreate-races_maghar-female.png"
+        }
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\mechagnome.json",
+      "bytes": 909,
+      "sha256": "1f491433431f0c7404ab8a8ab3aeb1fefc0de606075671ac32579fb888a0c852",
+      "slug": "mechagnome",
+      "race_ids": [
+        47
+      ],
+      "name": "Mechagnome",
+      "appearance_mode": "native-byte-codec-v1",
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "source_model_id": 182,
+          "source_display_id": 1563,
+          "model_path": "custom\\mechagnome\\native\\male\\mechagnomemale.m2"
+        },
+        "female": {
+          "source_model_id": 183,
+          "source_display_id": 1564,
+          "model_path": "custom\\mechagnome\\native\\female\\mechagnomefemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\mechagnome\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\mechagnome\\integration\\patch-root"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\naga.json",
+      "bytes": 3378,
+      "sha256": "b62c9447e96839068e9680074a32e7f516299ee1c8de5a3d13db3838d18e0049",
+      "slug": "naga",
+      "race_ids": [
+        54
+      ],
+      "name": "Naga",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0,
+        1
+      ],
+      "models": {
+        "male": {
+          "model_id": 120057,
+          "display_id": 60048,
+          "model_path": "custom\\naga\\sirus\\male\\snaga_male.m2"
+        },
+        "female": {
+          "model_id": 120058,
+          "display_id": 60049,
+          "model_path": "custom\\naga\\sirus\\female\\snaga_female.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\naga\\output\\patch-root",
+        "runtime_patch_root": "C:\\Users\\Zach\\.codex\\tmp\\sirus-naga\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\ogre.json",
+      "bytes": 6501,
+      "sha256": "e95701bb5352294791bb52be30318a6aa8d695524f194d33a0e85fd8df17e7d3",
+      "slug": "ogre",
+      "race_ids": [
+        60
+      ],
+      "name": "Ogre",
+      "appearance_mode": null,
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "model_id": 120062,
+          "display_id": 60053,
+          "donor_model_id": 10009,
+          "donor_display_id": 50013,
+          "path": "Character\\Ogre\\Male\\ogremale.m2"
+        },
+        "female": {
+          "model_id": 120063,
+          "display_id": 60054,
+          "donor_model_id": 10010,
+          "donor_display_id": 50014,
+          "path": "Character\\Ogre\\Female\\ogreFemale.m2"
+        }
+      },
+      "external_paths": {}
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\ogre_alliance.json",
+      "bytes": 6534,
+      "sha256": "ada542b39061a790b25a72b69ffae4afc280082a46abf1689c89ab7a7b387295",
+      "slug": "ogre_alliance",
+      "race_ids": [
+        61
+      ],
+      "name": "Ogre",
+      "appearance_mode": null,
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "model_id": 120062,
+          "display_id": 60053,
+          "donor_model_id": 10009,
+          "donor_display_id": 50013,
+          "path": "Character\\Ogre\\Male\\ogremale.m2"
+        },
+        "female": {
+          "model_id": 120063,
+          "display_id": 60054,
+          "donor_model_id": 10010,
+          "donor_display_id": 50014,
+          "path": "Character\\Ogre\\Female\\ogreFemale.m2"
+        }
+      },
+      "external_paths": {}
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\saberon.json",
+      "bytes": 2254,
+      "sha256": "6a25bd33202bc970871c385e2ced3ed465daa874d78d2ca1e483fe0b21362535",
+      "slug": "saberon",
+      "race_ids": [
+        64
+      ],
+      "name": "Saberon",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0
+      ],
+      "models": {
+        "male": {
+          "model_id": 120070,
+          "display_id": 60061,
+          "model_path": "custom\\saberon\\native\\saberon.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\saberon\\converted",
+        "runtime_patch_root": "C:\\Users\\Zach\\.codex\\tmp\\saberon-playable\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\sethrak.json",
+      "bytes": 1726,
+      "sha256": "5a0655c13eb29bc256f733951ea16b569288d60119d970a5621d0c498c778cae",
+      "slug": "sethrak",
+      "race_ids": [
+        62
+      ],
+      "name": "Sethrak",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0,
+        1
+      ],
+      "models": {
+        "male": {
+          "model_id": 120066,
+          "display_id": 60057,
+          "source_model_id": 2248,
+          "source_display_id": 16125,
+          "model_path": "custom\\sethrak\\native\\male\\sethrakmale.m2"
+        },
+        "female": {
+          "model_id": 120067,
+          "display_id": 60058,
+          "source_model_id": 2250,
+          "source_display_id": 16126,
+          "model_path": "custom\\sethrak\\native\\female\\sethrakfemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\sethrak-animations\\patch-root",
+        "runtime_patch_root": "C:\\Users\\Zach\\.codex\\tmp\\sethrak-playable\\assets"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\skyborne.json",
+      "bytes": 2441,
+      "sha256": "78596dea0871acd4ff0445fe6f22bf7fa735b01da1eed5d237dc7dc133c7702c",
+      "slug": "skyborne",
+      "race_ids": [
+        52,
+        53
+      ],
+      "name": "Skyborne",
+      "appearance_mode": "native-byte-codec-v1",
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "source_model_id": 2208,
+          "source_display_id": 15476,
+          "model_path": "custom\\skyborne\\models\\creature\\unk_exp00_7478487\\7478487.m2",
+          "curated_model_path": "custom\\skyborne\\runtime\\male\\7478487.m2",
+          "runtime_model_path": "custom\\skyborne\\expanded\\male\\7478487.m2"
+        },
+        "female": {
+          "source_model_id": 2209,
+          "source_display_id": 15475,
+          "model_path": "custom\\skyborne\\models\\creature\\unk_exp00_7478494\\7478494.m2",
+          "curated_model_path": "custom\\skyborne\\runtime\\female\\7478494.m2",
+          "runtime_model_path": "custom\\skyborne\\expanded\\female\\7478494.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\skyborne\\integration\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\skyborne\\integration\\runtime",
+        "expanded_patch_root": "G:\\RetroPorterWork\\skyborne\\integration\\expanded\\patch-root",
+        "portrait_sources": {
+          "52": {
+            "male": "R:\\Users\\Zach\\Pictures\\Portraits\\Alliance\\SkybornMale_Alliance.png",
+            "female": "R:\\Users\\Zach\\Pictures\\Portraits\\Alliance\\SkybornFemale_Alliance.png"
+          },
+          "53": {
+            "male": "R:\\Users\\Zach\\Pictures\\Portraits\\Horde\\SkybornMale_Horde.png",
+            "female": "R:\\Users\\Zach\\Pictures\\Portraits\\Horde\\SkybornFemale_Horde.png"
+          }
+        }
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\thinhuman.json",
+      "bytes": 12642,
+      "sha256": "0e9814f2a5b58bdfe574254123432c284b5f520fdb8601166ba778b098199dfb",
+      "slug": "thinhuman",
+      "race_ids": [
+        58,
+        59
+      ],
+      "name": "Forgotten",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0
+      ],
+      "models": {
+        "male": {
+          "model_id": 120061,
+          "display_id": 60052,
+          "model_path": "custom\\thinhuman\\native\\male\\thinhumanmale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\thinhuman\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\thinhuman\\integration\\patch-root"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\tuskarr.json",
+      "bytes": 17345,
+      "sha256": "b7307e0ad448577ec57ec32e1e87775dbf26c8268c91ea1a93ec9b983e5c8841",
+      "slug": "tuskarr",
+      "race_ids": [
+        55
+      ],
+      "name": "Tuskarr",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0
+      ],
+      "models": {
+        "male": {
+          "model_id": 120059,
+          "display_id": 60050,
+          "model_path": "custom\\tuskarr\\native\\male\\tuskarrmale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\tuskarr\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\tuskarr\\integration\\patch-root"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\vrykul.json",
+      "bytes": 16367,
+      "sha256": "39d1e4de08086db334f29fd2dd507cf5fc4ff39fa2ed731c8357802048c16dd1",
+      "slug": "vrykul",
+      "race_ids": [
+        56,
+        57
+      ],
+      "name": "Vrykul",
+      "appearance_mode": "native-stock-five-byte-v1",
+      "supported_genders": [
+        0,
+        1
+      ],
+      "models": {
+        "male": {
+          "model_id": 120060,
+          "display_id": 60051,
+          "model_path": "custom\\vrykul\\native\\male\\vrykulmale.m2",
+          "display_scale": 0.55
+        },
+        "female": {
+          "model_id": 120069,
+          "display_id": 60060,
+          "model_path": "custom\\vrykul-female\\VrykulPCFemale.m2",
+          "display_scale": 1.0
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\vrykul\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\vrykul\\integration\\patch-root",
+        "female_donor_root": "G:\\Downloads\\HDWoWModels\\Vrykul_client_files"
+      }
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\data\\retroported-races\\vulpera.json",
+      "bytes": 1405,
+      "sha256": "d2b1d803dafa56c766985d5683cb56adce79487f06b7f518f344bbbce18b6596",
+      "slug": "vulpera",
+      "race_ids": [
+        20
+      ],
+      "name": "Vulpera",
+      "appearance_mode": "native-five-byte-codec-v2",
+      "supported_genders": null,
+      "models": {
+        "male": {
+          "model_id": 112885,
+          "display_id": 60006,
+          "model_path": "custom\\vulpera\\native\\male\\vulperamale.m2"
+        },
+        "female": {
+          "model_id": 112886,
+          "display_id": 60007,
+          "model_path": "custom\\vulpera\\native\\female\\vulperafemale.m2"
+        }
+      },
+      "external_paths": {
+        "source_patch_root": "G:\\RetroPorterWork\\vulpera\\output\\patch-root",
+        "runtime_patch_root": "G:\\RetroPorterWork\\vulpera\\integration\\patch-root"
+      }
+    }
+  ],
+  "runtime": [
+    {
+      "path": "G:\\3.3.5a - Dev\\Battle.net.dll",
+      "bytes": 15588224,
+      "sha256": "88116951b04723cbb1073a1a0ff72dfdc40367f6649dffd08c602caa3ef1141f",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Battle.net.dll",
+        "bytes": 15588224,
+        "sha256": "88116951b04723cbb1073a1a0ff72dfdc40367f6649dffd08c602caa3ef1141f"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Client.dll",
+      "bytes": 3072,
+      "sha256": "528bcb5c9525c1407fd680476cb258da9c404170a648c6fb0a15bbe38b04bc1e",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Client.dll",
+        "bytes": 3072,
+        "sha256": "528bcb5c9525c1407fd680476cb258da9c404170a648c6fb0a15bbe38b04bc1e"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\CoAVolFog.dll",
+      "bytes": 1579008,
+      "sha256": "1c3ead7fea50305f8b90a4fb02346709183d1a23170bc253e41887450b71fe9a",
+      "export_copy": null,
+      "matches_export": null
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\dbghelp.dll",
+      "bytes": 1039728,
+      "sha256": "3f9ad6986eb1f3a09eb0b5cad888ba656f9148b3339399076f2541b3bc59213c",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\dbghelp.dll",
+        "bytes": 1039728,
+        "sha256": "3f9ad6986eb1f3a09eb0b5cad888ba656f9148b3339399076f2541b3bc59213c"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\dinput8.dll",
+      "bytes": 4962816,
+      "sha256": "49694da8a4dd2e13a6f7d1d86073b0e1da875ac62c7a03a4a8e69c90b0895688",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\dinput8.dll",
+        "bytes": 4962816,
+        "sha256": "49694da8a4dd2e13a6f7d1d86073b0e1da875ac62c7a03a4a8e69c90b0895688"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\DivxDecoder.dll",
+      "bytes": 413696,
+      "sha256": "ed34d37b575c91a56704218eb9f6abbefda8b7de0e2ed44c96191abd0f9915a5",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\DivxDecoder.dll",
+        "bytes": 413696,
+        "sha256": "ed34d37b575c91a56704218eb9f6abbefda8b7de0e2ed44c96191abd0f9915a5"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaAppearance.bin",
+      "bytes": 37068,
+      "sha256": "9ffb1ae4774fc87b9a19c128ee894a9f8eea44ce59d26f7bffa12543dd4c8e19",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaAppearance.bin",
+        "bytes": 23172,
+        "sha256": "b3fb7c69b7600c39f888ea1925701be5667097dcb02bb6ddd830e5489306bb50"
+      },
+      "matches_export": false
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaAppearance.dll",
+      "bytes": 302592,
+      "sha256": "ed908a5c5d33d6e5e2d1c44d50b41653af782d7187bc280594e343995d8f9597",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaAppearance.dll",
+        "bytes": 294400,
+        "sha256": "95752dc062b8ca4f4a3e31621e5c3db7d434c84d8af0cc78315100783a753c77"
+      },
+      "matches_export": false
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaAppearanceGeometry.bin",
+      "bytes": 10209704,
+      "sha256": "bbc62abb278514775d0417045a0558c1d18b9b12c99e7fb1b613afcbf02fbbf4",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaAppearanceGeometry.bin",
+        "bytes": 9796608,
+        "sha256": "98c7f0109f9b646bf8fb040f7605592054f08c472e5ed834260acb70606c286d"
+      },
+      "matches_export": false
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaAppearanceMaterials.bin",
+      "bytes": 148908,
+      "sha256": "f72f027f54a55c05aa0f76b457b97b484fe0e1aedc0e068cc0e0ca53e1878cba",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaAppearanceMaterials.bin",
+        "bytes": 148908,
+        "sha256": "f72f027f54a55c05aa0f76b457b97b484fe0e1aedc0e068cc0e0ca53e1878cba"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaCosmeticWings.bin",
+      "bytes": 55772,
+      "sha256": "57352c28459d073a29b3014d33b70f3b3756afa37fa9583ef6b30d503422ac3f",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaCosmeticWings.bin",
+        "bytes": 55772,
+        "sha256": "57352c28459d073a29b3014d33b70f3b3756afa37fa9583ef6b30d503422ac3f"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaDrakonid.bin",
+      "bytes": 760668,
+      "sha256": "e6b3e79afd9a70cbbf52fc453134457936dde33ba275d7c59a7a967089cab3e1",
+      "export_copy": null,
+      "matches_export": null
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaDrakonidCoverage.bin",
+      "bytes": 254788,
+      "sha256": "0c078538f01d43c0ceb0168c3548a95f32872569c67f0b90338c015169454f36",
+      "export_copy": null,
+      "matches_export": null
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaDrakonidTextures.bin",
+      "bytes": 1565,
+      "sha256": "1ba9133a75dad291d98a068b2dcde01f31a897a1764cd7f3e2c316c288a8f605",
+      "export_copy": null,
+      "matches_export": null
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaEarthen.bin",
+      "bytes": 46812,
+      "sha256": "8a0db93ba2d5c756b44ed84f2f7bc7c15eef13be6a7d87baf1383c6c0c624e02",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaEarthen.bin",
+        "bytes": 46812,
+        "sha256": "8a0db93ba2d5c756b44ed84f2f7bc7c15eef13be6a7d87baf1383c6c0c624e02"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaGnoll.bin",
+      "bytes": 8748,
+      "sha256": "cfacc8e681bb8e54a4f01ee9c12a91bf0bd23a23527bb548d4dc21ec1b33eea2",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaGnoll.bin",
+        "bytes": 8748,
+        "sha256": "cfacc8e681bb8e54a4f01ee9c12a91bf0bd23a23527bb548d4dc21ec1b33eea2"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaGnollTextures.bin",
+      "bytes": 1565,
+      "sha256": "1ba9133a75dad291d98a068b2dcde01f31a897a1764cd7f3e2c316c288a8f605",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaGnollTextures.bin",
+        "bytes": 1565,
+        "sha256": "1ba9133a75dad291d98a068b2dcde01f31a897a1764cd7f3e2c316c288a8f605"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaHaranir.bin",
+      "bytes": 232764,
+      "sha256": "59f31d00e372fd2646e1cf0d9d3d5d671b31edd60ff7b862f8d1ce7e53ba1f2f",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaHaranir.bin",
+        "bytes": 232764,
+        "sha256": "59f31d00e372fd2646e1cf0d9d3d5d671b31edd60ff7b862f8d1ce7e53ba1f2f"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaHaranirTextures.bin",
+      "bytes": 151935044,
+      "sha256": "99948ca570be2d376f0c67e3b8088739b6fa9f9d2c73985e19f68df77689a229",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaHaranirTextures.bin",
+        "bytes": 151935044,
+        "sha256": "99948ca570be2d376f0c67e3b8088739b6fa9f9d2c73985e19f68df77689a229"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaHighmountain.bin",
+      "bytes": 163344,
+      "sha256": "e83349252ad2687ac23fcfc5623db7401cf32e5faf47a5a7be20c2f94b014938",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaHighmountain.bin",
+        "bytes": 163344,
+        "sha256": "e83349252ad2687ac23fcfc5623db7401cf32e5faf47a5a7be20c2f94b014938"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaNaga.bin",
+      "bytes": 1291380,
+      "sha256": "e87547cff5d09500c294f8b06935d134cdd0bbb962e294a72de09404505bd8b3",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaNaga.bin",
+        "bytes": 1291380,
+        "sha256": "e87547cff5d09500c294f8b06935d134cdd0bbb962e294a72de09404505bd8b3"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaNagaTextures.bin",
+      "bytes": 21493571,
+      "sha256": "57ec560f99c1d48ac1e8f6a797c156513b99e7d349e3071afe405f812d159ae3",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaNagaTextures.bin",
+        "bytes": 21493571,
+        "sha256": "57ec560f99c1d48ac1e8f6a797c156513b99e7d349e3071afe405f812d159ae3"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaSaberon.bin",
+      "bytes": 6408,
+      "sha256": "7735c9325c807c5125760d87f323d6b7d4162fb542c1d8b5f435ea2d6b9a4daa",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaSaberon.bin",
+        "bytes": 6408,
+        "sha256": "7735c9325c807c5125760d87f323d6b7d4162fb542c1d8b5f435ea2d6b9a4daa"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaSaberonCoverage.bin",
+      "bytes": 249732,
+      "sha256": "696b4439aae664a89a6514ec66e85a1401c675dc4ac0500ae6b00a47c9b152ab",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaSaberonCoverage.bin",
+        "bytes": 249732,
+        "sha256": "696b4439aae664a89a6514ec66e85a1401c675dc4ac0500ae6b00a47c9b152ab"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaSaberonTextures.bin",
+      "bytes": 1565,
+      "sha256": "1ba9133a75dad291d98a068b2dcde01f31a897a1764cd7f3e2c316c288a8f605",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaSaberonTextures.bin",
+        "bytes": 1565,
+        "sha256": "1ba9133a75dad291d98a068b2dcde01f31a897a1764cd7f3e2c316c288a8f605"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaSethrak.bin",
+      "bytes": 3912,
+      "sha256": "bd14857a8c11fdf8027128763293701586b2102f9a6539d33a727014789fd606",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaSethrak.bin",
+        "bytes": 3912,
+        "sha256": "bd14857a8c11fdf8027128763293701586b2102f9a6539d33a727014789fd606"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaSethrakTextures.bin",
+      "bytes": 1919856,
+      "sha256": "d2b2cf58087a391f00198008fe871edd400ddf28d54a3a05674df74c5198528a",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaSethrakTextures.bin",
+        "bytes": 1919856,
+        "sha256": "d2b2cf58087a391f00198008fe871edd400ddf28d54a3a05674df74c5198528a"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaThinHuman.bin",
+      "bytes": 7188,
+      "sha256": "75794d192ea0c228b3da7bf7d0bdff1119f79d3f9bfef6650cd5e1a2b5d106eb",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaThinHuman.bin",
+        "bytes": 7188,
+        "sha256": "75794d192ea0c228b3da7bf7d0bdff1119f79d3f9bfef6650cd5e1a2b5d106eb"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaThinHumanTextures.bin",
+      "bytes": 6628215,
+      "sha256": "02aeb4c05893d06125b8b58fdb7c2a56fe3d66a7d094706a44b43cb503d1731e",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaThinHumanTextures.bin",
+        "bytes": 6628215,
+        "sha256": "02aeb4c05893d06125b8b58fdb7c2a56fe3d66a7d094706a44b43cb503d1731e"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaTuskarr.bin",
+      "bytes": 9060,
+      "sha256": "ecbe7ef490ba67eca029a57639192db61238522618491549766fe38529914387",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaTuskarr.bin",
+        "bytes": 9060,
+        "sha256": "ecbe7ef490ba67eca029a57639192db61238522618491549766fe38529914387"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaTuskarrTextures.bin",
+      "bytes": 6747335,
+      "sha256": "e2116c2c83adea079126fd5da765d20da24f044d4f161c4124e4368cb3d6bc71",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaTuskarrTextures.bin",
+        "bytes": 6747335,
+        "sha256": "e2116c2c83adea079126fd5da765d20da24f044d4f161c4124e4368cb3d6bc71"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaVrykul.bin",
+      "bytes": 12492,
+      "sha256": "39e2b7b4c67997dbbd34bae840bd606a59290f7f2fc82565a0ba00090335415c",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaVrykul.bin",
+        "bytes": 12492,
+        "sha256": "39e2b7b4c67997dbbd34bae840bd606a59290f7f2fc82565a0ba00090335415c"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaVrykulTextures.bin",
+      "bytes": 7761643,
+      "sha256": "46098750a0e235724c6e9cc8d9d4e26550aa47bef95fd5f0f82efe5e945bf296",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaVrykulTextures.bin",
+        "bytes": 7761643,
+        "sha256": "46098750a0e235724c6e9cc8d9d4e26550aa47bef95fd5f0f82efe5e945bf296"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaVulpera.bin",
+      "bytes": 319968,
+      "sha256": "c5434993b9af4a17d881965e4735cd2ac379e39c7142aac9844adff9528562d4",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaVulpera.bin",
+        "bytes": 319968,
+        "sha256": "c5434993b9af4a17d881965e4735cd2ac379e39c7142aac9844adff9528562d4"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\EsteriaVulperaTextures.bin",
+      "bytes": 88704196,
+      "sha256": "1ab844e74684aced2b069f1b91cd563aade45e05bd5e23f866a6c0c301cb098e",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\EsteriaVulperaTextures.bin",
+        "bytes": 88704196,
+        "sha256": "1ab844e74684aced2b069f1b91cd563aade45e05bd5e23f866a6c0c301cb098e"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\races-64-esteria\\races-64-esteria.dll",
+      "bytes": 85504,
+      "sha256": "887af0aeb059fb5176b3b89d0fd512b1e523d2a23ae50565764b37db41d25d18",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\races-64-esteria\\races-64-esteria.dll",
+        "bytes": 85504,
+        "sha256": "887af0aeb059fb5176b3b89d0fd512b1e523d2a23ae50565764b37db41d25d18"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\races-64-esteria\\README.md",
+      "bytes": 648,
+      "sha256": "3376efe3d4b6f34297b5ebf4dad9c2eb8ff53464ff4282e402e0f06d9260984c",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\races-64-esteria\\README.md",
+        "bytes": 648,
+        "sha256": "3376efe3d4b6f34297b5ebf4dad9c2eb8ff53464ff4282e402e0f06d9260984c"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\races-64-esteria\\wxl.json",
+      "bytes": 614,
+      "sha256": "6e508a0ec05795516e0ac8a8383ae12a8b3e89af2ff46c5f30939c5815524d48",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\races-64-esteria\\wxl.json",
+        "bytes": 614,
+        "sha256": "6e508a0ec05795516e0ac8a8383ae12a8b3e89af2ff46c5f30939c5815524d48"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\wxl-awesome-wotlk\\wxl-awesome-wotlk.dll",
+      "bytes": 144896,
+      "sha256": "6c457fca4f6835331c33500204273fe12db60b1c878dba4b079bc6ed19ae9d33",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\wxl-awesome-wotlk\\wxl-awesome-wotlk.dll",
+        "bytes": 144896,
+        "sha256": "6c457fca4f6835331c33500204273fe12db60b1c878dba4b079bc6ed19ae9d33"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\wxl-extended-dbc\\wxl-extended-dbc.dll",
+      "bytes": 222208,
+      "sha256": "89779553920782a544857e717f52bee3ad0e4a32020a83b1e3fab521d376e41c",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\wxl-extended-dbc\\wxl-extended-dbc.dll",
+        "bytes": 222208,
+        "sha256": "89779553920782a544857e717f52bee3ad0e4a32020a83b1e3fab521d376e41c"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\wxl-glue-zoom\\wxl-glue-zoom.dll",
+      "bytes": 116736,
+      "sha256": "80cf34a0fd90692b1289ded11436148b39b73def148fd68b520dc4d785e43390",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\wxl-glue-zoom\\wxl-glue-zoom.dll",
+        "bytes": 116736,
+        "sha256": "80cf34a0fd90692b1289ded11436148b39b73def148fd68b520dc4d785e43390"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\wxl-modern-m2\\wxl-modern-m2.cfg",
+      "bytes": 33,
+      "sha256": "d376e6af8d5ca444d1e984ef2cf9dd069d6a134499f4ff615b76d5e2de4fdf82",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\wxl-modern-m2\\wxl-modern-m2.cfg",
+        "bytes": 33,
+        "sha256": "d376e6af8d5ca444d1e984ef2cf9dd069d6a134499f4ff615b76d5e2de4fdf82"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\wxl-modern-m2\\wxl-modern-m2.dll",
+      "bytes": 208384,
+      "sha256": "daada1341ba3e480585fbaf16a7badea85c8e7141036a572c5c1e72001b65766",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\wxl-modern-m2\\wxl-modern-m2.dll",
+        "bytes": 208384,
+        "sha256": "daada1341ba3e480585fbaf16a7badea85c8e7141036a572c5c1e72001b65766"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\wxl-no-transparent-characters\\wxl-no-transparent-characters.dll",
+      "bytes": 102400,
+      "sha256": "7d2fbeba442836a9128eb0788f0a9bfdd0ae60d9c8351ecaca911b0fa6a6ec0f",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\wxl-no-transparent-characters\\wxl-no-transparent-characters.dll",
+        "bytes": 102400,
+        "sha256": "7d2fbeba442836a9128eb0788f0a9bfdd0ae60d9c8351ecaca911b0fa6a6ec0f"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\z-darkfallen-character-select\\darkfallen-character-select.dll",
+      "bytes": 82944,
+      "sha256": "818b272563d074cbc687ab05a6c2302ca1a3ce85b3d715746ac0e72219bf24b7",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\z-darkfallen-character-select\\darkfallen-character-select.dll",
+        "bytes": 82944,
+        "sha256": "818b272563d074cbc687ab05a6c2302ca1a3ce85b3d715746ac0e72219bf24b7"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\z-darkfallen-character-select\\wxl.json",
+      "bytes": 289,
+      "sha256": "74b4a25a9b858aa2739703dc76b8c59f9773018b23cc3a6d0a8a7bee999241d7",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\z-darkfallen-character-select\\wxl.json",
+        "bytes": 289,
+        "sha256": "74b4a25a9b858aa2739703dc76b8c59f9773018b23cc3a6d0a8a7bee999241d7"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Extensions\\z-darkfallen-character-select\\z-darkfallen-character-select.dll",
+      "bytes": 85504,
+      "sha256": "255c1ba527e4357aed907b194b75021b3e03bf6490f47a9e19474578d348fb7b",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Extensions\\z-darkfallen-character-select\\z-darkfallen-character-select.dll",
+        "bytes": 85504,
+        "sha256": "255c1ba527e4357aed907b194b75021b3e03bf6490f47a9e19474578d348fb7b"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\ijl15.dll",
+      "bytes": 372736,
+      "sha256": "334aa12f7dee453d1c6cb1b661a3bb3494d3e4cc9c2ff3f9002064c78404e43a",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\ijl15.dll",
+        "bytes": 372736,
+        "sha256": "334aa12f7dee453d1c6cb1b661a3bb3494d3e4cc9c2ff3f9002064c78404e43a"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\msvcr80.dll",
+      "bytes": 632656,
+      "sha256": "9382aaed2db19cd75a70e38964f06c63f19f63c9dfb5a33b0c2d445bb41b6e46",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\msvcr80.dll",
+        "bytes": 632656,
+        "sha256": "9382aaed2db19cd75a70e38964f06c63f19f63c9dfb5a33b0c2d445bb41b6e46"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Scan.dll",
+      "bytes": 47876,
+      "sha256": "0ca274f1c6f38be6864a8ef18a5601d3139c9336e1de29328c50abc07bc74807",
+      "export_copy": null,
+      "matches_export": null
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\skia.dll",
+      "bytes": 2833920,
+      "sha256": "ef23addd3f27c748f5ef07608da2c71c3551454debdcb8d4d40141b6e9a057d4",
+      "export_copy": null,
+      "matches_export": null
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\unicows.dll",
+      "bytes": 245408,
+      "sha256": "22f23cc65698741184ec34f46e6f69717644e0b5aabf5d5bd015101f2d72e56e",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\unicows.dll",
+        "bytes": 245408,
+        "sha256": "22f23cc65698741184ec34f46e6f69717644e0b5aabf5d5bd015101f2d72e56e"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\version.dll",
+      "bytes": 83456,
+      "sha256": "8d2ca77cdf3a84e8bcc0e56f273cc13861c57371d0f6f18e78004b19a804d950",
+      "export_copy": null,
+      "matches_export": null
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\WarcraftXL.dll",
+      "bytes": 683008,
+      "sha256": "558db91db921a6e6872c7c40b17e777689fabbe7d794dc1a5835e79513e2813e",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\WarcraftXL.dll",
+        "bytes": 683008,
+        "sha256": "558db91db921a6e6872c7c40b17e777689fabbe7d794dc1a5835e79513e2813e"
+      },
+      "matches_export": true
+    },
+    {
+      "path": "G:\\3.3.5a - Dev\\Wow.exe",
+      "bytes": 7718912,
+      "sha256": "b8d5b92d80ecf7044c07768d2df1171c345a34006c33afca7749247d63957e85",
+      "export_copy": {
+        "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\Races\\ClientRuntime\\Wow.exe",
+        "bytes": 7718912,
+        "sha256": "b8d5b92d80ecf7044c07768d2df1171c345a34006c33afca7749247d63957e85"
+      },
+      "matches_export": true
+    }
+  ],
+  "addons_present": [
+    {
+      "name": "!wxl-consoleport-bridge",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\!wxl-consoleport-bridge\\!wxl-consoleport-bridge.toc",
+          "bytes": 236,
+          "sha256": "596899f28d9e742c053ff9c0fa5996bee81c8068121fcfb2531e0da22427b51a"
+        }
+      ]
+    },
+    {
+      "name": "Blizzard_AchievementUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_ArenaUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_AuctionUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_BarbershopUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_BattlefieldMinimap",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_BindingUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_Calendar",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_CombatLog",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_CombatText",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_DebugTools",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_GlyphUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_GMChatUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_GMSurveyUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_GuildBankUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_InspectUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_ItemSocketingUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_MacroUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_RaidUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_TalentUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_TimeManager",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_TokenUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_TradeSkillUI",
+      "toc": []
+    },
+    {
+      "name": "Blizzard_TrainerUI",
+      "toc": []
+    },
+    {
+      "name": "ConsolePort",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePort\\ConsolePort.toc",
+          "bytes": 1537,
+          "sha256": "1259fdc61381bda7fed7aa222fe484eecd2426c9ca66b0dfcf906c701197a562"
+        }
+      ]
+    },
+    {
+      "name": "ConsolePortAdvanced",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePortAdvanced\\ConsolePortAdvanced.toc",
+          "bytes": 289,
+          "sha256": "0ed83da223068962a8ce086195e7d523492a6d040fd3f3733f6b944a4dc0c486"
+        }
+      ]
+    },
+    {
+      "name": "ConsolePortBar",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePortBar\\ConsolePortBar.toc",
+          "bytes": 571,
+          "sha256": "c5d40790d317da2b42dae86f916b0551f2f83526d9598d41354c53ea515d582c"
+        }
+      ]
+    },
+    {
+      "name": "ConsolePortHelp",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePortHelp\\ConsolePortHelp.toc",
+          "bytes": 227,
+          "sha256": "acc64098ec6661dcbe7dc06385f77c9cec30e2208f97f55f1c2d833899d8a8e1"
+        }
+      ]
+    },
+    {
+      "name": "ConsolePortKeyboard",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePortKeyboard\\ConsolePortKeyboard.toc",
+          "bytes": 420,
+          "sha256": "7627436275a01d498d971352cd4f48259494155002078ee05668c12d1a2e5602"
+        }
+      ]
+    },
+    {
+      "name": "ConsolePortLoader",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePortLoader\\ConsolePortLoader.toc",
+          "bytes": 268,
+          "sha256": "dde1f2b4bf21cd76580dce5cdda86d9562b9732bf2d4051442bb69b421041442"
+        }
+      ]
+    },
+    {
+      "name": "ConsolePortUI_Loot",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePortUI_Loot\\ConsolePortUI_Loot.toc",
+          "bytes": 153,
+          "sha256": "a075e645444c7e34697c5ec785556a7482cdbfcb5c46b763f266fe51bdb07824"
+        }
+      ]
+    },
+    {
+      "name": "ConsolePortUI_Menu",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\ConsolePortUI_Menu\\ConsolePortUI_Menu.toc",
+          "bytes": 211,
+          "sha256": "f629779b83802eaa2187f9ae8d8baff41d97dc29c4c70d17a0c93d221399a2cc"
+        }
+      ]
+    },
+    {
+      "name": "DragonUI",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\DragonUI\\DragonUI.toc",
+          "bytes": 1140,
+          "sha256": "43eb2d7af43139e52f4543b21ecbcb085a651eb1563e14b044d6a67e08d7bcc1"
+        }
+      ]
+    },
+    {
+      "name": "DragonUI_Options",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\DragonUI_Options\\DragonUI_Options.toc",
+          "bytes": 1198,
+          "sha256": "37abe8cd953dda93773cd5828c09a4764ac24b9af4284a269d131ecef4d46fc0"
+        }
+      ]
+    },
+    {
+      "name": "EsteriaAppearanceCache",
+      "toc": []
+    },
+    {
+      "name": "EsteriaChat",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\EsteriaChat\\EsteriaChat.toc",
+          "bytes": 230,
+          "sha256": "a9e27c460fc4db859440de58378a52b85be046cebcc35ece4cf6c52ca08670a7"
+        }
+      ]
+    },
+    {
+      "name": "EverlookBroadcasting",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\EverlookBroadcasting\\EverlookBroadcasting.toc",
+          "bytes": 335,
+          "sha256": "e4aaff4ed5fd5995e068eb44e2f57ebc8d0299aab1fd31f97b390109eb4ff458"
+        }
+      ]
+    },
+    {
+      "name": "PlayerBots",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\PlayerBots\\PlayerBots.toc",
+          "bytes": 236,
+          "sha256": "c3f27e56290f7a18183a4617300f95d7fce6c0131af7453d172989a2035e57be"
+        }
+      ]
+    },
+    {
+      "name": "SquadControl",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\SquadControl\\SquadControl.toc",
+          "bytes": 276,
+          "sha256": "73b25612e06021bf50b6f92258d7159e18e819c9921247cc72da7b61fa1e8ba8"
+        }
+      ]
+    },
+    {
+      "name": "wxl-gamepad-ui",
+      "toc": [
+        {
+          "path": "G:\\3.3.5a - Dev\\Interface\\AddOns\\wxl-gamepad-ui\\wxl-gamepad-ui.toc",
+          "bytes": 211,
+          "sha256": "f1f2d98e97460faa266638fe854fcc6769abe2fae806f7aea5a9b507cc778af8"
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\apply_darkfallen_archive_fixes.py",
+      "bytes": 9108,
+      "sha256": "169d87e186b8836c6a2b9485da629b18d09ebeab440e6f91d646baae00f5a94f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\arakkoa_deploy.py",
+      "bytes": 14111,
+      "sha256": "c14817c40087e682742dc0dc1fd4f67f8b9f502d602608805e10346392ff1212"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\arakkoa_race_pack.py",
+      "bytes": 36435,
+      "sha256": "82168bb97c9eb6e3d635ebe0b2b501f80649b54d334ef9423c89fbdc6e831b6f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\archive_capacity_patch.py",
+      "bytes": 7973,
+      "sha256": "be2b4b4477be37211d4f9e9e38e2bc15100718549339b78e48c752490816a680"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\ascension_character_appearance_repair.py",
+      "bytes": 7008,
+      "sha256": "4cc48c33c38a933a59a2943e7be08068bf1da68c28869682316b13b48d8d38ad"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\ascension_customization_pack.py",
+      "bytes": 16431,
+      "sha256": "3c83f98a2333f4d1b7ed0a92b9aa20d58cd87fd5b97728456638e210d1033274"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\audit_wod_appearance_ids.py",
+      "bytes": 3370,
+      "sha256": "eb88c1c4b3ec9a44d933c09f67403fa5528baab9dd1a6b9a0f4bd1a623bd3982"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\check_glue_race_tables.py",
+      "bytes": 1058,
+      "sha256": "c9f242511342789c31c302a5c764d74d5e4fa54bbad88304358e7bae856328ec"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\compare_wod_isolation_glue.py",
+      "bytes": 3645,
+      "sha256": "cbc838412ede9be3b8cf2aeda4f9c7b2432c66915087a314f409deee8bb42694"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\cosmetic_wings_character_select.py",
+      "bytes": 9711,
+      "sha256": "e4e79d1cec59a192e7f5f41abbce02e3795ccb58bb55711d8d01a1cd77436fe6"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\creator_portrait_layout.py",
+      "bytes": 14853,
+      "sha256": "3c22a0185447acc92a9cc08149175da32ad3361f9e0dacfcc99e1cfe749538b3"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\creature_clothing_repair.py",
+      "bytes": 4863,
+      "sha256": "a755916a36347eb6738923df6277f6c7fb604a861b952324954d856af900a3e2"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\creature_portrait_pack.py",
+      "bytes": 17553,
+      "sha256": "61eeb861a40d7f8346edf1afcfbb10e065b8c453f1f49f72423780701a239b51"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\creature_race_pack.py",
+      "bytes": 72396,
+      "sha256": "a2e4a5cd4a14fa2ed4ba2c66dff42cee07c7753c623142503e18c62fbed7bf69"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\customization_buttons.py",
+      "bytes": 16289,
+      "sha256": "f1b4c2dc88a3eb54d1609ab64b55425c3945c6536bf46aa1c16812abcdc4d4c6"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\customization_label_repair.py",
+      "bytes": 7914,
+      "sha256": "2cd20b7ba9167f6f064057c67452f80591f87d78e8ac363c19b80e92314eef91"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\customization_layout.py",
+      "bytes": 10881,
+      "sha256": "c254387e95e5d61211f0da981f8dfc7d737c49d9708346d0a3fc90853f058f6d"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\darkfallen_race_pack.py",
+      "bytes": 55855,
+      "sha256": "94c6198a31295aaf8e9babda96b9ba50cd1b1aa7e5224ec8367b249acbc4f689"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\derive_playable_race_portraits.py",
+      "bytes": 8375,
+      "sha256": "6e53a930efe9ea1d5f56b450b779efe2f2f8858ed2c2266ce2738310c9ce68aa"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\drakonid_deploy.py",
+      "bytes": 20840,
+      "sha256": "191de4b9cd0dfd851a6907de1a767a2ffa2d91f82c67413f6e7fe64cce2234eb"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\drakonid_portrait_blender.py",
+      "bytes": 2728,
+      "sha256": "34e83214f992f82c04376b3c99a69cb3a3ca83bfa6951d4d44983fdcd4116951"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\drakonid_race_pack.py",
+      "bytes": 49146,
+      "sha256": "40c9eae8c9af211303885cdcafec416aa87995969e2463efedf0d8302a4472cf"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\earthen_race_pack.py",
+      "bytes": 51010,
+      "sha256": "08035ca3e36212aec96f301504f8ce4abdc40f2c226749dd0e412ee475a00fee"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\earthen_touchup.py",
+      "bytes": 16229,
+      "sha256": "98d3961037500ac3fd57c2043c8e4f2931dc877b60bb2dc4a752796d441fcf19"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\expanded_appearance_pack.py",
+      "bytes": 22537,
+      "sha256": "67e560e13ba99a8dbf3d43d9ea9a11978f578c1d253e36f37159e3ad96795f12"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_cape_repair.py",
+      "bytes": 11409,
+      "sha256": "eba2b059b492e412a8e09c9ea38a5973d967c83346268344a7b25c9d5645f6c0"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_cloak_landing_repair.py",
+      "bytes": 7979,
+      "sha256": "64db254697fb356058f0c1dfa172657597b14b5d5457d477ec8c048fb956382f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_deploy.py",
+      "bytes": 11347,
+      "sha256": "d737e07452781a89ea3c666e24324651b1cb0127ddb643d28b80bae00ad19623"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_equipment_repair.py",
+      "bytes": 5683,
+      "sha256": "92e09f736c50d52059abb1f69be725c3a297a507a462df4ce985043226a506b5"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_preview_blender.py",
+      "bytes": 3887,
+      "sha256": "004503d92b62a0351a7ffacc51f6a8f711486aa18b44b9854bb4f85e33e9fe19"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_race_pack.py",
+      "bytes": 68940,
+      "sha256": "a1f549cad3f01a9fcee23f61bb706554c9b97d69b1ea27c810736584063730a0"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_render_repair.py",
+      "bytes": 5997,
+      "sha256": "66c2b55887a4630c1a1f2c321d28759bff13c8f20508dc48d216d725c39c7625"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\gnoll_texture_repair.py",
+      "bytes": 14922,
+      "sha256": "5e25fbef0dfcd69412541b1df0ab91be8ed20598acaf3bb27780d604f1a3ed23"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\haranir_live_render.py",
+      "bytes": 3710,
+      "sha256": "5ccaf4b19c5ba8ea7b650abf01e1422f58b5033bab1a850032900391aa341146"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\haranir_race_pack.py",
+      "bytes": 55395,
+      "sha256": "afc493123310cc87a751f0d409944ce4359db89bb1150ae542efcc6ea59f2e14"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\haranir_render_repair.py",
+      "bytes": 4397,
+      "sha256": "bf995e55bc802f9d139bef9dfce2acb0e7b6bdac90b2871a94e60b1b9af5a111"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_animation_repair.py",
+      "bytes": 6691,
+      "sha256": "864158eed8fb8effe1d0921e78d03fc9a748340e1dfa38992fa17019bbb5bd44"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_appearance.py",
+      "bytes": 7481,
+      "sha256": "4598953c5e752d0486109a68cba12f55afad39f6a4b22e7cf040e8e535110a42"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_complete_tracks.py",
+      "bytes": 9038,
+      "sha256": "8894bed2ad8fd0c889049c60c14f030cb4778a6642e2bd2391170b2912ceee53"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_creator_repair.py",
+      "bytes": 8897,
+      "sha256": "282823bff3e0db98536ea1a812b3f234b1046760a5496ce22b708f48c1d3c416"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_eye_repair.py",
+      "bytes": 4416,
+      "sha256": "3786ac431a8f85f461234c3d7864d2deab4f4d82df8ce3e25f053a04d8ee09ec"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_faces.py",
+      "bytes": 17211,
+      "sha256": "cd94b8f36b4968820db7b5776f16b5f5d3a8444c65ae3d70d11f532835777730"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_head_repair.py",
+      "bytes": 7313,
+      "sha256": "0e98107acd50e03fd2411365952e6636d3fbb2b6ab727d5479c33cadfb3a666d"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_integration.py",
+      "bytes": 31886,
+      "sha256": "abf69de6d3240230e77aa7eeec4bc057eea57ce518dae2dd987a109f3a3857fb"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_race_pack.py",
+      "bytes": 23409,
+      "sha256": "4e6be094faff1cbcd2e57379ff5f93fc260691e9e74810466af38c1d51146af7"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\highmountain_teardown_repair.py",
+      "bytes": 4542,
+      "sha256": "f8a29266c67229e5e1f67a3ed2c24bc9e63ba97a0c1e468e169fdc4adf95243e"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\jinyu_deploy.py",
+      "bytes": 13575,
+      "sha256": "854717edb6d6826a5d02fef2e37772e056338218783686f41324c7be357578fb"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\jinyu_race_pack.py",
+      "bytes": 29009,
+      "sha256": "10faf9a8b4cb7763632fc92154e591a37335781ffdd5b5f475db94a98ee851d8"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\kobold_deploy.py",
+      "bytes": 11199,
+      "sha256": "2671e313d69336d093159c7f0c61bcb4445d27c6540ce4de96e2d5fc2fd96b35"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\kobold_options_deploy.py",
+      "bytes": 9292,
+      "sha256": "6a5e1a9216f362fc514c122d6a1211b118d4dfcf683410e475ed13fff4fe2e50"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\kobold_options_update.py",
+      "bytes": 20347,
+      "sha256": "22f82a6790d41dd6c40c235e4b50494616a7c96713a6b1d799dec78c116b1790"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\kobold_prepare.py",
+      "bytes": 4988,
+      "sha256": "4d11d8e101b89975646f56f39fa5756c1a688cfb2476e3c3bc8c48949af259b6"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\kobold_race_pack.py",
+      "bytes": 48894,
+      "sha256": "4b96475d42ab035d753a14bc4ce4902984b9ec3b8c8384456bb40a55f1c23750"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\mechagnome_animations.py",
+      "bytes": 7884,
+      "sha256": "b71d400fe744ad29b8cb7b54aeda027b9f23b68c267c8cd32c145c7fc2a121bd"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\mechagnome_race_pack.py",
+      "bytes": 40214,
+      "sha256": "bd4d668dcee01069194b8fd4e5eeaa575dd2d3022c8871d3bb571b221df5693d"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\native_appearance_patch.py",
+      "bytes": 12499,
+      "sha256": "aa8b64213cf5e2c9a6434e030448f01fce16be351d2f8304c25b747dabc79337"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\ogre_furbolg_race_pack.py",
+      "bytes": 63052,
+      "sha256": "ef7ea2df274758537049e0effeb7a764082660dea59749cc4f41c8c328031e3f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\ogre_import.py",
+      "bytes": 18132,
+      "sha256": "9fb6e8ac5d752f9fcbb750d18ee90512899936099a14851f919bbdc9287ee9b6"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\playable_race_pack.py",
+      "bytes": 41718,
+      "sha256": "531d5ae89decded1eec203e951f2934b23c26aaa47af3b14f542969c1e446453"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\race_portrait_pack.py",
+      "bytes": 14730,
+      "sha256": "8bb8ebd6299b2fe2a46986550b831e7a98a37784ed42f00cf264d512a8b9b8e5"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\race_touchup_pack.py",
+      "bytes": 11161,
+      "sha256": "759f75b49a394668e098bc497afba722b59a62662687885266fd88c9b221bea9"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\repair_hd_npcs_highelf_darkfallen.py",
+      "bytes": 35274,
+      "sha256": "b04547b2a1f3cb167bed697e744cc20cb79c52ca8ae4a8b448cace27b8b8f541"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\retroported_race_pack.py",
+      "bytes": 104165,
+      "sha256": "cc1721efe4258f0769cf15610164c48f90add2a47f757abb659174e9750a33f0"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\saberon_equipment_fit.py",
+      "bytes": 23607,
+      "sha256": "afcb5c652f7b298afd56387aa2eb62123da0e79a39b90260b105fe7a573c0b42"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\saberon_equipment_pack.py",
+      "bytes": 27679,
+      "sha256": "f3566ca9899f3dc8031bad457a862795f6bbe7d25c57081f4f831af9257cfea7"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\saberon_neckline_repair.py",
+      "bytes": 12055,
+      "sha256": "ba4d6724b2e15cc69451f89f4568ea0ee62a1bcece0ac97bf2ea00c78b2fa286"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\saberon_race_pack.py",
+      "bytes": 36156,
+      "sha256": "0fbd1004bf2abdbae7bc1a5f34a2853e70e297fec421acefafa09145191a6d47"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sanitize_wod_isolation_glue.py",
+      "bytes": 3699,
+      "sha256": "a17b070928d3d238e33f14a39bd8412bc683c6cc63a206059415096fff4a4b14"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sethrak_animation_pack.py",
+      "bytes": 15285,
+      "sha256": "9559c053b4ae2fd36408c9e3a13fdb96174485cb8ae9eb221cf4f9cf0df8d567"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sethrak_body_blender.py",
+      "bytes": 4538,
+      "sha256": "d759bba2aafebc095a447be27578436e8db44cac9f9bebf4eadff288a893d4ee"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sethrak_body_regions.py",
+      "bytes": 5512,
+      "sha256": "adc18e09caf293f42a2016ad7b984237f39207b667a018a120c065b003b0a15a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sethrak_equipment_preview.py",
+      "bytes": 3790,
+      "sha256": "b062e49d5e7726992d34c1a11cbe6ce89a9c3def928834ae36ec272b2e0ae298"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sethrak_equipment_repair.py",
+      "bytes": 43547,
+      "sha256": "b21de0e918ed4277c4f7d75792a0dee16d06fb78b6aa9209461489a47f45d042"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sethrak_race_pack.py",
+      "bytes": 26875,
+      "sha256": "47cb77c209af9d3ae7265a98ea4e370edf783ff3c55749ab6fd01ae960967972"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\show_glue_calls.py",
+      "bytes": 1326,
+      "sha256": "674de1f57894af41c74e5edc406bb5f0651081dac505d5f49c6aa59fbff511e5"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sirus_naga_equipment.py",
+      "bytes": 19367,
+      "sha256": "9604e266e95ebd475ae8a57c3ba932f217fb10c18416c7e6338a3172150fb8ec"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\sirus_naga_pack.py",
+      "bytes": 39867,
+      "sha256": "2353bcb0afcf7296437eb2ea66e8f61a5c547939db9deaa6b7384fc0c8522a69"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\skyborne_race_pack.py",
+      "bytes": 17187,
+      "sha256": "a9f1743e44f8d1741d092dc13530a89f200df7a0055238c0b3b4ab2c5fd9889f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\skyborne_visual_pack.py",
+      "bytes": 22976,
+      "sha256": "326e676fec6908b53182881357162528819d92decd69a43d9cf2cc28b5a819fc"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_arakkoa_race_pack.py",
+      "bytes": 2803,
+      "sha256": "5c75f4a6f3117d54e2953bd62bb0c1f4b4b5f1b4239840c05f80c0c410c22132"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_cosmetic_wings_character_select.py",
+      "bytes": 1896,
+      "sha256": "6ea95b162ef43380be644620654dc2652c8cef953b87bcdc49b81ebb7293f7f0"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_creature_race_pack.py",
+      "bytes": 6434,
+      "sha256": "5af649e30e88928083fea1ccec50848f0e20f5af2f50fd517692b078fcf0d529"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_darkfallen_contract.py",
+      "bytes": 34063,
+      "sha256": "0ca5157d98a5a99e03bae9cad34b13d7ee4822f50b76d9aa20d880404c44320d"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_earthen_race_pack.py",
+      "bytes": 7305,
+      "sha256": "b3e1d126febde3e1d5f2aff1fd70c6ad479a4bc0c7f73ab4284b6db633bdbae6"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_forgotten_race_name.py",
+      "bytes": 4149,
+      "sha256": "6452c52ad5689dccca965e2ee70f2cc6cddc6a52f57a09e528573afc573d9f74"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_gnoll_cloak_landing.py",
+      "bytes": 5743,
+      "sha256": "11a70dd7e22bb2b53988ab3fcd97fb97bdf5988343e218d3b4413635df6fc711"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_gnoll_equipment.py",
+      "bytes": 5309,
+      "sha256": "a9aa0d34d65e52b383d3ff03bf7a4632aa13f3b07a9180845a6460650fe8dfb6"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_gnoll_race_pack.py",
+      "bytes": 9361,
+      "sha256": "bc0238b988f10cab0d92b7434dbf367a36efab9f413623478891dee2bd210502"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_haranir_race_pack.py",
+      "bytes": 9679,
+      "sha256": "aba866661fba550a872d2aa9ad2998a014e5cc04c9bcdb4be2f9ff71b782ad3a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_animation_repair.py",
+      "bytes": 4311,
+      "sha256": "5a4f59697eda4f4f105ea15304d90f5880797ab927cb7ea253c1d39689e06224"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_complete_tracks.py",
+      "bytes": 6861,
+      "sha256": "0eb18785d410945f6c0769260ff4efb0f0b5f8ff26e531de599527fe49601013"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_creator_repair.py",
+      "bytes": 2629,
+      "sha256": "26648e0a9e6a56d6063e2f0ac99766ac40c805bb8d39af92325166aba018d61f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_eye_repair.py",
+      "bytes": 2969,
+      "sha256": "f2171cebacb359d9d438b53369aaccb5e6bafa3f9c433a3177f9859b57817e52"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_face_pivots.py",
+      "bytes": 2309,
+      "sha256": "9814f7a8026df8c5b312afdf38d591b5622e9bdac917d4b20786579234ca8462"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_head_repair.py",
+      "bytes": 3378,
+      "sha256": "d8aa390439cee89189d63ef86b4aa76af266ecfc9ea8664f17d5952fdf7ec0e2"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_race_pack.py",
+      "bytes": 5116,
+      "sha256": "b0f64625e608eda77a45876443bf06fca673882ebd05e3d78d780c5aa1e83d0f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_highmountain_teardown_repair.py",
+      "bytes": 2002,
+      "sha256": "203b4d68ced85b318468715ca75d0bac0782db28454727d3bfd152ab31e1be80"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_kobold_options_update.py",
+      "bytes": 8157,
+      "sha256": "de55c18bf5677d79c4a7a222af1376660e1bc0b815a10e7545504767c0fb5c50"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_kobold_race_pack.py",
+      "bytes": 8671,
+      "sha256": "9a3a4135dab764ada0d139bf920a46c3e8af41d3b39ba85cdb48fa2e4237603c"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_mechagnome_race_pack.py",
+      "bytes": 7108,
+      "sha256": "1267f19e3497467ad1cf4d8461255bf82bdfb6ec5e4f583a932cecd7a6af5500"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_native_appearance.py",
+      "bytes": 8406,
+      "sha256": "38f86a62e658940e24983c7e4815b277327d865c853ae35553599e53b7489313"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_ogre_donor_sections.py",
+      "bytes": 684,
+      "sha256": "b7b0023dc3d6800cb56bf4e20e41fce2b61d4c4041716dd62dc8819ab716c61e"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_ogre_furbolg_race_pack.py",
+      "bytes": 6612,
+      "sha256": "4b8e164f9afd578287dd361fd999475e357011cc61f9798570818f2dada1038a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_playable_race_contract.py",
+      "bytes": 6995,
+      "sha256": "34d46217b901e426d3a83ee0b58635d65efdc8ba197f6df4b3dfce97f060136a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_playable_race_pack.py",
+      "bytes": 36787,
+      "sha256": "ff3d4eb09e8fafde66b90b1c2e888287c8e5565bdad693534260a6c9afebc704"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_race_portrait_pack.py",
+      "bytes": 3307,
+      "sha256": "7941a8d1b703a3c064573e16d22d2a85a4a98056ae4825353300c111d96c1ac1"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_race_scope_corrective_sql.py",
+      "bytes": 480,
+      "sha256": "31ef271e8678361f29e483795137e72d546a177fbbf5c771c6d03e1db77e8500"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_race_touchup_pack.py",
+      "bytes": 4349,
+      "sha256": "971c42c943dc94657bf1b766ab3b78a3726842ef25b514c191df8a4c49858130"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_retroported_race_contract.py",
+      "bytes": 8036,
+      "sha256": "348d625b88a4d7870b0a756fa9a82b954dcde0fd01121a52eb24d4caced94640"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_retroported_race_pack.py",
+      "bytes": 16277,
+      "sha256": "e0901675de89c058a32208dd8c986b83213d6970382738c5da3ae358cc868949"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_saberon_equipment.py",
+      "bytes": 5322,
+      "sha256": "3a6c8e7650143e91e5bd67a031dffc40a767699fe22c15dcdc19af5e5802361f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_saberon_equipment_fit.py",
+      "bytes": 9376,
+      "sha256": "135efebdefe023f5d65455fab51a434656d959250a522895fae97e7125a543e5"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_saberon_race_pack.py",
+      "bytes": 11243,
+      "sha256": "56cf92666c7d4f824f0afd2ef8695e3ff0e492d2f805b9498a0f6f9131b1f90f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_sethrak_equipment.py",
+      "bytes": 10770,
+      "sha256": "f3a32ad4cf92ef848d2340d0ee62664fb089e267660ff69ed2ac82c041d8efe5"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_sethrak_race_pack.py",
+      "bytes": 6460,
+      "sha256": "f79384b79d16e8b2fed81184116a7d546e92ea58494b32aa4b2892548f40a8d1"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_skyborne_race_pack.py",
+      "bytes": 5327,
+      "sha256": "baa1efa276452b14169d6c5c91e0be64642f142d3b6ab698bd43600f0a5a3358"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_skyborne_visual_pack.py",
+      "bytes": 5040,
+      "sha256": "3c4ef471cfbe0fcd48c683e4799537c2b6633026da0fce8dcf46d661d138ee83"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_vrykul_creator_gender.py",
+      "bytes": 4203,
+      "sha256": "599095638f4647066d398443bce76309617067f5b8294d9521a2ce5c763aaa98"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_vrykul_female_pack.py",
+      "bytes": 3642,
+      "sha256": "a493ea03dac6033a04ffd9cbf06b3003f0d74dd58813cb962d4e01f59528519d"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_vulpera_creator.py",
+      "bytes": 4533,
+      "sha256": "0777e579536754c38885bf63fdff3159113d04f2bb9d065bdae8379eb8508381"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_vulpera_models.py",
+      "bytes": 7209,
+      "sha256": "00b1b3ab106adb7bf874a02f4511cc35da481bd856a33f26fb402e6b3c1a831a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\test_vulpera_race_pack.py",
+      "bytes": 8605,
+      "sha256": "288b67cc31d7d875bec257a5b347bd48037c0ed8a9694c1bda73b56e39bb68ac"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\thinhuman_equipment_repair.py",
+      "bytes": 41397,
+      "sha256": "7e3ad12179816b2efdd5d8c2d1b001b570be54e5a3429f338af82a7b733cb4eb"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\tuskarr_equipment_repair.py",
+      "bytes": 22078,
+      "sha256": "8722704cc557a8fb7526105bbea9b0f53965d6e5b1c85f02f35c197509ec8167"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vrykul_component_fix.py",
+      "bytes": 3268,
+      "sha256": "512631d4025a847e6578eda197284a65a29e382b64cf53e6fe8c30889449c576"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vrykul_creator_fix.py",
+      "bytes": 3016,
+      "sha256": "641f3878184b181f05e6f9b6bedbd68b923199f5a785a914c892ccfeed9346ff"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vrykul_female_deploy.py",
+      "bytes": 11528,
+      "sha256": "40adf8e59fd77faf419f69423d08469273636f2df0c34d1f92ec8100fe345f62"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vrykul_female_pack.py",
+      "bytes": 26189,
+      "sha256": "49d77c1efcf66a9b44ef49af3b69ce7a547571ef71cbdaa193c1a2bcda3da83e"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vrykul_track_fix.py",
+      "bytes": 4015,
+      "sha256": "0ea26a07acd669329ea8b8a3c02aaa360c3ed62a0de004e4c448ec8c113ea21c"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vulpera_equipment.py",
+      "bytes": 7530,
+      "sha256": "a00be015a9419955c4fe45c4ee42a5f5446ad49165b0f636d474221c54a3cf1f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vulpera_helmet_repair.py",
+      "bytes": 4597,
+      "sha256": "1d8aefd8492cd2ded6b14421b0b47493672064252b12b61bd7f02c8f41402b4a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vulpera_migration.py",
+      "bytes": 3512,
+      "sha256": "af2f1a68894aab3fcffa7537136280d2845352b5b1ae068c2dbef3f6f0264975"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vulpera_models.py",
+      "bytes": 12691,
+      "sha256": "b51101e8ad55b44e652d78096c9c11dc6b561ccf160e8471b4cb300f4a5c309f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vulpera_race_pack.py",
+      "bytes": 31685,
+      "sha256": "8c2e1cdf8aa3fbe16d199fb20ada9aecd7121fee3eee7c11085c663646682c50"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\vulpera_render_repair.py",
+      "bytes": 8781,
+      "sha256": "32fca6e1d4f216fb33c8caddaa239965aa41a37731d328cb786a8868ab9178f9"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\wod_character_appearance_repair.py",
+      "bytes": 11432,
+      "sha256": "7a1f9b5bd3109f171a0ca20a30e4ee1f38309da943f1fc939753df18741e9280"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\wod_model_appearance_repair.py",
+      "bytes": 16398,
+      "sha256": "cf648612151bc92d0efd5f823ca53ad61cbe13664070e836a828fd427ed1a32a"
+    }
+  ],
+  "sources": [
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\AzerothPlex\\build\\wxl-core\\extensions\\races-64-esteria\\MoreRaces.cpp",
+      "bytes": 11895,
+      "sha256": "620f1174e0ed729eafd4e9fb4a86eab5fda156702143f575f64f62af2c14853a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\build-native.bat",
+      "bytes": 1825,
+      "sha256": "557c27635c647305b270145c43be8d290707df91f1e0c527be020304b0f046e1"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\build-races.bat",
+      "bytes": 928,
+      "sha256": "4e073fa075ed39558fe44cde8214ef2c09fdf286d8ab2740f4830c38a95c7178"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\ClothingMaterials.inl",
+      "bytes": 6584,
+      "sha256": "235687e293abe019e4c9ffa273bfbaba486e3ed58ba86a11b637454879b4659c"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\CosmeticWings.inl",
+      "bytes": 4228,
+      "sha256": "5e7807b1d659d129588fbf41bc2ca55184bd2e3fcfb45406accda0ff87bb556f"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\HaranirMaterials.inl",
+      "bytes": 19613,
+      "sha256": "c99dc000c7042df60efec8b84ce73603c34e221fa8afba4f9322f6a41016702b"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\NativeAppearance.cpp",
+      "bytes": 80377,
+      "sha256": "366bdbe9f2485be31e6a89e535d37e74c6b3bca6ce30abb7178a0e96f9d1e5df"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\NativeAppearance.def",
+      "bytes": 429,
+      "sha256": "b744d07f39b6e1c6e286209251441ec08d982bd3968598b739b6a95471c3c60a"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\README.md",
+      "bytes": 63480,
+      "sha256": "01f55f769b5c12e3a799cc980938007fd7fb7a176556585eec50e1f287085f65"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\TestArchiveCapacity.cpp",
+      "bytes": 7823,
+      "sha256": "ad365f79ff09088cc46ec5512ca1be6ac8c64a08c1a7071c5459974b52020dc9"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\TestCosmeticWings.cpp",
+      "bytes": 9038,
+      "sha256": "459e02cda01e54efe0121b96867e2e17731c380bc2fe2b258e421c8e9b42b7ae"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\TestCustomizationChoices.cpp",
+      "bytes": 18296,
+      "sha256": "6b99bc5114f899a7a6faa174011f474cd46f15fbaee5ef4e1b1a43ff2e5bca24"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\TestHighmountainMaterials.cpp",
+      "bytes": 49484,
+      "sha256": "b085e2adf1268ab21c761ace0137b5911a2f121f87c5d2aaf790a9727ada6933"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\TestNativeAppearance.cpp",
+      "bytes": 13628,
+      "sha256": "eb07560d3cc2e174f7a786362a8a4d7421830a13bebacebbfc3b28cdbbce8d8c"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\client-customization\\TestRaceCapacity.cpp",
+      "bytes": 5004,
+      "sha256": "0686b6223152fd6b455f830275654c5368a78e0e826decded81e3dbe6b10bce9"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\modules\\mod-custom-server\\src\\darkfallen_racials.cpp",
+      "bytes": 3116,
+      "sha256": "7969219658dcbd3354d229e8b82c98781f8b118cd1f29b24c4e1a3cf1d868232"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\modules\\mod-worgoblin-high-elf\\src\\Worgoblin.cpp",
+      "bytes": 6745,
+      "sha256": "378ddf14417e71c5d9c2e105866ac3e6598f2145492aea219129e6578ba76249"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\database\\Database\\Implementation\\CharacterDatabase.cpp",
+      "bytes": 86536,
+      "sha256": "d66e9adf764f279622ea8dc2a26d7117cd1bf32818e8288cbd4f08a7efe113e3"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\game\\DataStores\\DBCStores.cpp",
+      "bytes": 49298,
+      "sha256": "d83093815f834c562fdd10d82bfb2748322415fad4924e21c33842f79c466168"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\game\\Entities\\Object\\Updates\\UpdateFieldFlags.cpp",
+      "bytes": 139195,
+      "sha256": "5851aea8d404ba393222d51060449314f2436ba784560d0e849d1945e67c18b0"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\game\\Entities\\Player\\PlayerStorage.cpp",
+      "bytes": 313859,
+      "sha256": "49dff5be67ee3399f49ab62bdde97fd434533d08543556ff5cdf2cd0bb8dee0c"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\game\\Entities\\Player\\RaceMgr.cpp",
+      "bytes": 2008,
+      "sha256": "6189069d90fa5848e65bd2102b578148b0a42ec44b7b5b020d36a0febe9edb48"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\game\\Globals\\ObjectMgr.cpp",
+      "bytes": 468104,
+      "sha256": "4e6e440e3b50fece00e36aa5a5c53cb8fb8eaaef3646b9cbb0f3dd8b276d4030"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\game\\Handlers\\CharacterHandler.cpp",
+      "bytes": 113644,
+      "sha256": "3bb3f0091ce0cc4c4e8e0cb0d06c793ae8a473dcfe4e3dd96b720dabf4524d75"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\game\\Server\\WorldSession.h",
+      "bytes": 55443,
+      "sha256": "aec76848296bdb892b184509673779638740f9396d36a93f686529d4c006a599"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\shared\\CreatureAppearance.h",
+      "bytes": 6251,
+      "sha256": "5ddcea15ba6cdb3da76a3ebdb769a47947c24f23ddc6281030c1cb634e2b9473"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\shared\\EarthenAppearance.h",
+      "bytes": 3998,
+      "sha256": "92f07087c78740780c8ebfea9ea32eb140b2267d0bf6f6c1d1e9ca7896307e7c"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\shared\\HaranirAppearance.h",
+      "bytes": 6353,
+      "sha256": "e6c8fca0f2e177f87a813f8292bc58f816077536e16db4567f4d8c0201d27bc5"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\shared\\HighmountainAppearance.h",
+      "bytes": 5171,
+      "sha256": "9db858d399fc6028ffd6c8934f3b9e5ba489d420122de6ea8ad22b8ea1f23531"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\shared\\SharedDefines.h",
+      "bytes": 213745,
+      "sha256": "3fd1fef3a059e21483fa98d335da2985e85f919c8453f4805242cdf5943f1d0b"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\src\\server\\shared\\VulperaAppearance.h",
+      "bytes": 10931,
+      "sha256": "54b526b9a93f6b963467f6c218672c9662390cb82a6f538703143f75646c778c"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\archive_capacity_patch.py",
+      "bytes": 7973,
+      "sha256": "be2b4b4477be37211d4f9e9e38e2bc15100718549339b78e48c752490816a680"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\tools\\native_appearance_patch.py",
+      "bytes": 12499,
+      "sha256": "aa8b64213cf5e2c9a6434e030448f01fce16be351d2f8304c25b747dabc79337"
+    },
+    {
+      "path": "R:\\Users\\Zach\\Documents\\GitHub\\EsteriaWoW\\wxl-races-patcher\\DarkfallenCharacterSelect.cpp",
+      "bytes": 14542,
+      "sha256": "63e33c14a2c10dce79ab10343d815db0e91477097b3d7e8a95d32132a2ab3f57"
+    }
+  ],
+  "export_verification": {
+    "utc": "2026-10-09T10:01:05.474592+00:00",
+    "mpq_bytes": 3343080721,
+    "mpq_sha256": "ed35a3eb333c030e7fb7505d04902ce8fbaad83a6bef52d28efefb134f3138a1",
+    "mpq_entries_verified": 56811,
+    "support_files_verified": 1083,
+    "custom_race_slots": 40
+  }
+}
