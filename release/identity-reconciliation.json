@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "task": "I02",
+  "status": "in_progress",
+  "evidence": {
+    "effective_client_chrraces_sha256": "a6d93f363e0debe6e888dca63029b1b4c2bfcea434f03426dbcbb59c1436ebdd",
+    "live_server_chrraces_sha256": "578592f28adf40a448b5986fbb51438659e855dfaae962b3e3bd6829822b751f",
+    "esteria_registry_sha256": "0c7058f2236adb29e7cd67a76f13a512f0cf9d40ff79cebf12babbb1ba0e84ae",
+    "esteria_allocation_sha256": "ac39a7675aad49c872b64f6b18719a9d08fe515f6e0260e8c72e6f11d1e17a78",
+    "saved_identity_source": "release/runtime-observation.json"
+  },
+  "decisions": [
+    {
+      "case": "legacy-sethrak-15",
+      "race_id": 15,
+      "saved_characters": 0,
+      "effective_client": "Sethrak",
+      "decision": "retain_legacy_nonplayable",
+      "reason": "Race 62 is the active Sethrak identity and has saved characters. ID 15 remains legacy content and must not be silently re-enabled as a second playable Sethrak."
+    },
+    {
+      "case": "active-sethrak-62",
+      "race_id": 62,
+      "saved_characters": 2,
+      "effective_client": "SethrakAlliance",
+      "live_server": "SethrakAlliance",
+      "decision": "preserve_identity",
+      "reason": "The effective client/server identity agrees and saved characters exist."
+    },
+    {
+      "case": "kul-tiran-29",
+      "race_id": 29,
+      "saved_characters": 1,
+      "effective_client": "KulTiran",
+      "effective_glue": "Kul Tiran / Alliance",
+      "decision": "preserve_identity_add_missing_registry_definition",
+      "reason": "The effective client and Glue agree and a saved character exists; the older registry/core enum omission must not erase this identity."
+    },
+    {
+      "case": "illidari-horde-30",
+      "race_id": 30,
+      "saved_characters": 3,
+      "effective_client": "Illidari",
+      "effective_glue": "Illidari / Horde",
+      "decision": "preserve_identity_add_missing_registry_definition",
+      "reason": "The effective client/Glue pairing identifies the Horde side and saved characters exist."
+    },
+    {
+      "case": "illidari-alliance-31",
+      "race_id": 31,
+      "saved_characters": 1,
+      "effective_client": "Illidari",
+      "effective_glue": "Illidari / Alliance",
+      "decision": "preserve_identity_add_missing_registry_definition",
+      "reason": "The effective client/Glue pairing identifies the Alliance side and a saved character exists."
+    },
+    {
+      "case": "ogre-alliance-61",
+      "race_id": 61,
+      "saved_characters": 0,
+      "effective_client": "OgreAlliance",
+      "live_server": "OgreAlliance",
+      "effective_glue": "Ogre / Alliance",
+      "decision": "preserve_effective_ogre_identity",
+      "reason": "Current client, server, allocation and Glue consistently assign 61 to Alliance Ogre. The stale Furbolg manifest may not reclaim it."
+    },
+    {
+      "case": "furbolg-collision",
+      "old_race_id": 61,
+      "saved_characters_on_old_id": 0,
+      "decision": "requires_new_identity_and_allocations",
+      "candidate_race_id": 71,
+      "candidate_status": "observed_free_not_allocated",
+      "candidate_evidence": [
+        "No row 71 exists in the current effective client ChrRaces table.",
+        "No race enum 71 exists in the current Esteria SharedDefines race block.",
+        "No saved character uses race 71 in the aggregate live evidence.",
+        "No race-specific reference to 71 was found in the current registry, retroported manifests, race manager, native appearance sources or Glue snapshot."
+      ],
+      "remaining_gate": "Verify all DBC/SQL/UI/native ownership and allocate non-conflicting Furbolg table ranges before assigning 71."
+    },
+    {
+      "case": "earthen-codec-48",
+      "race_id": 48,
+      "saved_characters": 1,
+      "saved_with_extended_appearance": 1,
+      "observed_extraAppearance_min": 43,
+      "observed_extraAppearance_max": 43,
+      "decision": "freeze_existing_codec_before_generation"
+    },
+    {
+      "case": "haranir-codec-51",
+      "race_id": 51,
+      "saved_characters": 2,
+      "saved_with_extended_appearance": 2,
+      "observed_extraAppearance_min": 14347388583937,
+      "observed_extraAppearance_max": 111355737414930,
+      "decision": "freeze_existing_codec_before_generation"
+    },
+    {
+      "case": "drakkin-alliance-66",
+      "race_id": 66,
+      "saved_characters": 1,
+      "effective_client": "DrakkinAlliance",
+      "effective_glue": "Drakkin / Alliance",
+      "manifest": "drakkin_alliance",
+      "registry": "Drakkin",
+      "live_server_chrraces_stale_label": "KoboldAlliance",
+      "decision": "preserve_identity_normalize_server_label_to_drakkin",
+      "reason": "The current client, Glue, manifest, registry and racial implementation consistently define Drakkin. The mounted server DBC label is the lone Kobold-era naming remnant."
+    },
+    {
+      "case": "drakkin-horde-67",
+      "race_id": 67,
+      "saved_characters": 0,
+      "effective_client": "DrakkinHorde",
+      "effective_glue": "Drakkin / Horde",
+      "manifest": "drakkin_horde",
+      "manifest_retired_reason": "Drakkin is Alliance only; slot and assets remain reserved.",
+      "registry": "Drakkin Horde (retired)",
+      "live_server_chrraces_stale_label": "KoboldHorde",
+      "decision": "retain_reserved_nonplayable_drakkin_horde",
+      "reason": "Current authored sources agree that 67 belongs to the Drakkin pair but is not creation-enabled."
+    }
+  ],
+  "unresolved": [
+    {
+      "case": "ids-24-27-drift",
+      "saved_characters": 0,
+      "effective_client_server": {
+        "24": "FelOrc",
+        "25": "Broken",
+        "26": "empty placeholder row",
+        "27": "no ChrRaces row"
+      },
+      "registry_core_claims": {
+        "24": "Broken Alliance",
+        "25": "Forsaken",
+        "26": "Pandaren Horde",
+        "27": "Broken Horde"
+      },
+      "blocker": "Choose the stable intended identities and rebuild all referencing layers together. No saved-character migration constrains these four slots, but authored sources conflict."
+    },
+    {
+      "case": "furbolg-table-ownership",
+      "blocker": "The stale Furbolg manifest reuses appearance/start/name allocation ranges now assigned to Alliance Ogre. Furbolg needs new verified-free table allocations in addition to a new race ID."
+    }
+  ],
+  "release_gate": "all_blocked_until_unresolved_is_empty"
+}

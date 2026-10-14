@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "source_repository": "EsteriaWoW",
+  "source_head": "a6f7e6d0a36b8f5bb6900a6cd79850ccb2c45bdb",
+  "note": "Raw vendored evidence. These bytes are not the reconciled module registry and must not be edited in place.",
+  "files": [
+    {
+      "source": "data/retroported-races/allocation.json",
+      "destination": "vendor/esteria/data/retroported-races/allocation.json",
+      "bytes": 13770,
+      "sha256": "ac39a7675aad49c872b64f6b18719a9d08fe515f6e0260e8c72e6f11d1e17a78"
+    },
+    {
+      "source": "modules/mod-custom-server/data/races/race_registry.json",
+      "destination": "vendor/esteria/data/races/race_registry.json",
+      "bytes": 20828,
+      "sha256": "0c7058f2236adb29e7cd67a76f13a512f0cf9d40ff79cebf12babbb1ba0e84ae"
+    },
+    {
+      "source": "effective-client:Interface\\GlueXML\\GlueXML.toc",
+      "destination": "client/glue/Interface/GlueXML/GlueXML.toc",
+      "bytes": 1595,
+      "sha256": "6640294ae11f37f7d0f4621cbd420b7b0d8ea8e3ded97d376bd735b9dbcbe08d",
+      "provider": "Data/enUS/patch-enUS-Z.MPQ"
+    },
+    {
+      "source": "RaceGuide/sources/client-active/Interface/GlueXML/ECS_Constants.lua",
+      "destination": "client/glue/Interface/GlueXML/ECS_Constants.lua",
+      "bytes": 10266,
+      "sha256": "4d6a2731e751ec96338cd0b2e3dd7b6dd04c2ad90acb8fe495f7e7b21a5d5716",
+      "effective_client_match": true
+    },
+    {
+      "source": "RaceGuide/sources/client-active/Interface/GlueXML/ECS_Search.lua",
+      "destination": "client/glue/Interface/GlueXML/ECS_Search.lua",
+      "bytes": 4888,
+      "sha256": "5cca26cb36279e56104d83bbf2db0dda77707d5088f6acd14a986c492ce8a4b0",
+      "effective_client_match": true
+    }
+  ]
+}

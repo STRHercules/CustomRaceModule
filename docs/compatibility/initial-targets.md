@@ -33,10 +33,32 @@ I08 must establish build/locale, accepted image provenance, patch-site guards an
 The baseline freezes 287 source/runtime/reference files with readback verification. Three active shared
 appearance artifacts differ from the historical export, and the Drakonid catalogs are absent from it.
 All discovered extension DLL/JSON files are inspection candidates; presence does not imply dependency
-or permission to distribute. The archive list has 59 entries, sizes only; it is not effective mount order
-and has no archive-content hashes or extracted current Glue/DBC certification.
+or permission to distribute. The initial archive list has 59 entries and sizes only.
 
-Remaining I01 work: effective client/server data, current server image/revision, read-only database
-schema and aggregate saved identity/codec state, vendor provenance and concrete Linux toolchain pin.
-Race-ID reconciliation follows these inputs in I02; do not allocate a new Furbolg ID or reinterpret
-race 61 before saved-state evidence is available.
+A later read-only runtime probe identifies 52 archives in the recognized numeric/letter enUS/root chain.
+`Data/enUS/patch-enUS-Z.MPQ` is the highest recognized locale archive and `Data/patch-Z.MPQ` the highest
+recognized root archive. Five present MPQs are outside that resolver contract and must be classified before
+archive order is certified: `Data/common-3.MPQ`, `Data/enUS/backup-enUS.MPQ`, `Data/Patch-Dn.MPQ`,
+`Data/Patch-Dr.MPQ`, and `Data/Patch-Zzz.mpq`.
+
+The currently running Docker worldserver is now concretely identified by binary SHA-256
+`5f7cf86777a170f2bc73b72af1967aea19f2cceb8e790723eccf31262ba52b94` and image ID
+`sha256:5fef573b2c458fb954c06c1c5f694e3d0c1e3fc40f28b02fd803ad503d95bd94`. Race-relevant DBC and
+continuation destinations are mounted read-only. This identifies the live binary/image but still does not
+prove which source revision produced it.
+
+A focused effective-byte pass now hashes seven race-critical client DBCs plus the current GlueXML TOC and
+nine key login/create/select Glue files. Every sampled client entry resolves from
+`Data/enUS/patch-enUS-Z.MPQ`. Live server hashes show exact matches for `CharStartOutfit.dbc` and
+`CreatureDisplayInfo.dbc`, while `ChrRaces.dbc`, `CharSections.dbc`, `BarberShopStyle.dbc`,
+`CreatureModelData.dbc` and `Spell.dbc` intentionally or accidentally diverge and require reconciliation.
+
+The live character schema is now captured read-only at the type level. The stock appearance fields and
+`race` are `TINYINT UNSIGNED`; `extraAppearance` is `BIGINT UNSIGNED`. Aggregate saved counts by RaceID are
+recorded without character/account identifiers. Only RaceIDs 48 and 51 currently have nonzero
+`extraAppearance`, making those installed codec meanings preservation-sensitive in I02.
+
+Remaining I01 work: complete effective Glue/asset closure, classification of unrecognized MPQs,
+source-to-runtime revision correspondence, owned startup/racial SQL state, vendor provenance and concrete
+Linux compiler pin. Race-ID reconciliation follows these inputs in I02; do not allocate a new Furbolg ID
+or reinterpret race 61 before saved-state evidence is available.

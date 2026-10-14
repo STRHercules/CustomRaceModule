@@ -1,0 +1,10 @@
+# mod-esteria-races
+#
+# This distribution is still under development. Keep the module disabled until
+# the release includes a reconciled identity lock and its matching core adapter.
+
+EsteriaRaces.Enable = 0
+
+# Refuse to claim custom-race readiness when required generated policy/adapter
+# components are not installed. This remains enabled for supported releases.
+EsteriaRaces.StrictStartup = 1

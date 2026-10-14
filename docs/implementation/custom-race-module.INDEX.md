@@ -1,6 +1,6 @@
 # mod-esteria-races implementation package
 
-Status: implementation begun in CustomRaceModule; I01 baseline capture is in progress.
+Status: implementation begun in CustomRaceModule; I01 baseline capture and I02 identity reconciliation are in progress.
 Date: October 14, 2026. Working name: `mod-esteria-races`.
 
 See [execution record](progress.md) and [initial targets](../compatibility/initial-targets.md) for actual

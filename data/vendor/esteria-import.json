@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "source_name": "EsteriaWoW",
+  "description": "Curated source/tool/runtime inputs used to reconstruct mod-esteria-races. Large converted payloads remain release-pack inputs until provenance review is complete.",
+  "copy_groups": [
+    {
+      "name": "race-source-data",
+      "source": "source",
+      "strip_prefix": "data/retroported-races",
+      "destination": "vendor/esteria/data/retroported-races",
+      "patterns": [
+        "data/retroported-races/*.json"
+      ]
+    },
+    {
+      "name": "race-registry",
+      "source": "source",
+      "strip_prefix": "modules/mod-custom-server/data/races",
+      "destination": "vendor/esteria/data/races",
+      "patterns": [
+        "modules/mod-custom-server/data/races/race_registry.json"
+      ]
+    },
+    {
+      "name": "native-appearance-source",
+      "source": "source",
+      "strip_prefix": "client-customization",
+      "destination": "vendor/esteria/native/appearance",
+      "patterns": [
+        "client-customization/*.cpp",
+        "client-customization/*.h",
+        "client-customization/*.inl",
+        "client-customization/*.def",
+        "client-customization/*.bat",
+        "client-customization/README.md"
+      ]
+    },
+    {
+      "name": "native-select-source",
+      "source": "source",
+      "strip_prefix": "wxl-races-patcher",
+      "destination": "vendor/esteria/native/select",
+      "patterns": [
+        "wxl-races-patcher/*.cpp",
+        "wxl-races-patcher/*.json",
+        "wxl-races-patcher/*.bat"
+      ]
+    },
+    {
+      "name": "appearance-server-source",
+      "source": "source",
+      "strip_prefix": "src/server/shared",
+      "destination": "vendor/esteria/server/shared",
+      "patterns": [
+        "src/server/shared/*Appearance.h"
+      ]
+    },
+    {
+      "name": "racial-source",
+      "source": "source",
+      "strip_prefix": ".",
+      "destination": "vendor/esteria/server/racials",
+      "patterns": [
+        "modules/mod-worgoblin-high-elf/src/Worgoblin.cpp",
+        "modules/mod-custom-server/src/darkfallen_racials.cpp",
+        "src/server/game/Entities/Player/BrokenRacialEffects.h"
+      ]
+    },
+    {
+      "name": "server-data-recipes",
+      "source": "source",
+      "strip_prefix": "Races/Server/Database",
+      "destination": "vendor/esteria/server/database-reference",
+      "patterns": [
+        "Races/Server/Database/character-appearance-schema.tsv",
+        "Races/Server/Database/export-report.json",
+        "Races/Server/Database/world-chrraces_dbc.sql",
+        "Races/Server/Database/world-custom_race_start_skill.sql",
+        "Races/Server/Database/world-custom_race_start_skill_exclude.sql",
+        "Races/Server/Database/world-custom_race_start_spell.sql",
+        "Races/Server/Database/world-custom_race_start_spell_exclude.sql",
+        "Races/Server/Database/world-player_race_stats.sql",
+        "Races/Server/Database/world-player_totem_model.sql",
+        "Races/Server/Database/world-playercreateinfo.sql",
+        "Races/Server/Database/world-playercreateinfo_action.sql",
+        "Races/Server/Database/world-playercreateinfo_item.sql",
+        "Races/Server/Database/world-playercreateinfo_skills.sql"
+      ]
+    },
+    {
+      "name": "legacy-race-tooling",
+      "source": "source",
+      "strip_prefix": "tools",
+      "destination": "vendor/esteria/tools",
+      "patterns": [
+        "tools/*race*.py",
+        "tools/*appearance*.py",
+        "tools/*customization*.py",
+        "tools/*portrait*.py",
+        "tools/*glue*.py",
+        "tools/*character*ui*.py",
+        "tools/*login*screen*.py",
+        "tools/*archive*capacity*.py",
+        "tools/cars_mount_pack.py",
+        "tools/wod_model_migration.py",
+        "tools/wow_xref.py",
+        "tools/creator_portrait_layout.py",
+        "tools/expanded_appearance_pack.py",
+        "tools/skyborne_visual_pack.py",
+        "tools/highmountain_*.py",
+        "tools/mechagnome_animations.py",
+        "tools/creature_*repair.py",
+        "tools/sethrak_*.py",
+        "tools/drakkin_*.py",
+        "tools/vrykul_female_pack.py"
+      ]
+    }
+  ],
+  "client_runtime": {
+    "destination": "vendor/esteria/client-runtime",
+    "redistribution_status": "review_required",
+    "patterns": [
+      "Esteria*.bin",
+      "EsteriaAppearance.dll",
+      "WarcraftXL.dll",
+      "dinput8.dll",
+      "Extensions/races-64-esteria/*.dll",
+      "Extensions/races-64-esteria/*.json",
+      "Extensions/wxl-awesome-wotlk/*.dll",
+      "Extensions/wxl-extended-dbc/*.dll",
+      "Extensions/wxl-glue-zoom/*.dll",
+      "Extensions/wxl-modern-m2/*.dll",
+      "Extensions/wxl-modern-m2/*.cfg",
+      "Extensions/wxl-no-transparent-characters/*.dll",
+      "Extensions/z-darkfallen-character-select/*.dll",
+      "Extensions/z-darkfallen-character-select/*.json"
+    ]
+  },
+  "glue": {
+    "locale": "enUS",
+    "toc": "Interface\\GlueXML\\GlueXML.toc",
+    "destination": "client/glue/Interface",
+    "asset_destination": "client/glue/assets",
+    "extract_static_asset_literals": true
+  }
+}

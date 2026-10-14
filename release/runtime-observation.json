@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "task": "I01",
+  "status": "observed_not_certified",
+  "client": {
+    "locale": "enUS",
+    "recognized_archive_count": 52,
+    "winning_recognized_archives": [
+      "Data/enUS/patch-enUS-Z.MPQ",
+      "Data/patch-Z.MPQ"
+    ],
+    "unclassified_archives": [
+      "Data/common-3.MPQ",
+      "Data/enUS/backup-enUS.MPQ",
+      "Data/Patch-Dn.MPQ",
+      "Data/Patch-Dr.MPQ",
+      "Data/Patch-Zzz.mpq"
+    ],
+    "archive_order_status": "needs_review",
+    "effective_entries": [
+      {
+        "entry": "DBFilesClient/ChrRaces.dbc",
+        "bytes": 76152,
+        "sha256": "a6d93f363e0debe6e888dca63029b1b4c2bfcea434f03426dbcbb59c1436ebdd",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "DBFilesClient/CharSections.dbc",
+        "bytes": 91506069,
+        "sha256": "56a9748835df6d43b720d5200f3753f7e6088e454cf2ce57d4f9fe3d21f97568",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "DBFilesClient/CharStartOutfit.dbc",
+        "bytes": 367951,
+        "sha256": "65c2503cd3f018d17ecfe73a5a6d40fc23285e0f62684a1ae9e482f9a575656b",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "DBFilesClient/BarberShopStyle.dbc",
+        "bytes": 1542293,
+        "sha256": "d9eea9d3cdb0bf99caba7d486542ba859f23edd588e1f4ae0e6caa9337cafb21",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "DBFilesClient/CreatureDisplayInfo.dbc",
+        "bytes": 1911823,
+        "sha256": "0e7b994ff79bedb43ebb71a1e5deb7078691592b2023a505f88201b2a8a89845",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "DBFilesClient/CreatureModelData.dbc",
+        "bytes": 266159,
+        "sha256": "9c010e11468a8a8770d69a54d38346909ca41c25480f0d28711778fa51627919",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "DBFilesClient/Spell.dbc",
+        "bytes": 56696858,
+        "sha256": "37174c8341c6d2b85a16d03692d38ce3ca3323a3bbe20f20b3966d5b8f510552",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/GlueXML.toc",
+        "bytes": 1595,
+        "sha256": "6640294ae11f37f7d0f4621cbd420b7b0d8ea8e3ded97d376bd735b9dbcbe08d",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/AccountLogin.lua",
+        "bytes": 79586,
+        "sha256": "9cdbcaef39ef3565d2cd4200e3c920f1628623bbbd585ee7f40f9efd1cc554a5",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/AccountLogin.xml",
+        "bytes": 89440,
+        "sha256": "c2d5fe7cd648ffc2fad83fae26a2878b85fbc15e22835bdafa7e4745a468d89d",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/CharacterCreate.lua",
+        "bytes": 127468,
+        "sha256": "925e8fc3526bfc87d86d91dc7f9488409bd43bb43be85fa7701cd09c622440ea",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/CharacterCreate.xml",
+        "bytes": 63804,
+        "sha256": "cf09240344407470176fb5642f9f751bf9aee2e72787ad7d9eb49a06adbe3b48",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/CharacterSelect.lua",
+        "bytes": 45558,
+        "sha256": "fb53c361014a18647b4edf7de297e1325db99109203c900af6ff2864ec13570a",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/CharacterSelect.xml",
+        "bytes": 88275,
+        "sha256": "d8e174643e25702f85294e18db43ffcda37214cf5c6fe35862a6952e6d99f70e",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/CharacterInfo.lua",
+        "bytes": 49615,
+        "sha256": "3a81a68bc33309bb579d3d775b22c00c80fa3f569f893ef0aaaee51cdcb031f9",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/GlueParent.lua",
+        "bytes": 30048,
+        "sha256": "68ac67289e289c90a3ef577d890c055e73d5ac279e4ccdc4cb6d3d29aa6cfb99",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      },
+      {
+        "entry": "Interface/GlueXML/GlueStrings.lua",
+        "bytes": 86528,
+        "sha256": "6e5c6ccc0f6e03f6d7ce4ae92e5fa41e2c729afe2ea4fa6483f942e8ce1f5074",
+        "provider": "Data/enUS/patch-enUS-Z.MPQ"
+      }
+    ]
+  },
+  "server": {
+    "container": "ac-worldserver",
+    "status": "running",
+    "image_id": "sha256:5fef573b2c458fb954c06c1c5f694e3d0c1e3fc40f28b02fd803ad503d95bd94",
+    "image_ref": "acore/ac-wotlk-worldserver:master",
+    "worldserver_sha256": "5f7cf86777a170f2bc73b72af1967aea19f2cceb8e790723eccf31262ba52b94",
+    "race_data_mounts": [
+      "/azerothcore/env/dist/data/dbc-continuations/FactionTemplate.dbc1-freeborn",
+      "/azerothcore/env/dist/data/dbc/AreaTable.dbc",
+      "/azerothcore/env/dist/data/dbc/BarberShopStyle.dbc",
+      "/azerothcore/env/dist/data/dbc/CharSections.dbc",
+      "/azerothcore/env/dist/data/dbc/CharStartOutfit.dbc",
+      "/azerothcore/env/dist/data/dbc/ChrRaces.dbc",
+      "/azerothcore/env/dist/data/dbc/CreatureDisplayInfo.dbc",
+      "/azerothcore/env/dist/data/dbc/CreatureModelData.dbc",
+      "/azerothcore/env/dist/data/dbc/SkillRaceClassInfo.dbc",
+      "/azerothcore/env/dist/data/dbc/Spell.dbc"
+    ],
+    "mounts_observed_read_only": true,
+    "data_sha256": {
+      "dbc/ChrRaces.dbc": "578592f28adf40a448b5986fbb51438659e855dfaae962b3e3bd6829822b751f",
+      "dbc/CharSections.dbc": "0483f7f86ee46871b9bfc51c667f24ada8b59e384598a0730b9ebde944558846",
+      "dbc/CharStartOutfit.dbc": "65c2503cd3f018d17ecfe73a5a6d40fc23285e0f62684a1ae9e482f9a575656b",
+      "dbc/BarberShopStyle.dbc": "1512dfcf8aa489a1cdb7da4867a798e1d70cef1967c6d2578339c9ec52fc346b",
+      "dbc/CreatureDisplayInfo.dbc": "0e7b994ff79bedb43ebb71a1e5deb7078691592b2023a505f88201b2a8a89845",
+      "dbc/CreatureModelData.dbc": "f987fc5705592e0429430b04892a7886de55fcfe4dbedcb51abeb7758124b929",
+      "dbc/Spell.dbc": "76b34719ef0c56cfdb4743d87eef8e79eb996fd2cac8c45e788017ebd6a5c07c",
+      "dbc/SkillRaceClassInfo.dbc": "71cbaf79c8ae853740dedabe194498e44c1054441fb9e4540df0d172c6025258",
+      "dbc-continuations/FactionTemplate.dbc1-freeborn": "2adbed4ff4d4aa5dd4c59e0ab18fff17cd5cb23f313f6d44669408442ba60e4a"
+    }
+  },
+  "client_server_table_comparison": {
+    "matching": [
+      "CharStartOutfit.dbc",
+      "CreatureDisplayInfo.dbc"
+    ],
+    "different": [
+      "ChrRaces.dbc",
+      "CharSections.dbc",
+      "BarberShopStyle.dbc",
+      "CreatureModelData.dbc",
+      "Spell.dbc"
+    ]
+  },
+  "database": {
+    "characters_schema": {
+      "race": "tinyint unsigned",
+      "gender": "tinyint unsigned",
+      "skin": "tinyint unsigned",
+      "face": "tinyint unsigned",
+      "hairStyle": "tinyint unsigned",
+      "hairColor": "tinyint unsigned",
+      "facialStyle": "tinyint unsigned",
+      "extraAppearance": "bigint unsigned"
+    },
+    "aggregate_saved_identity_counts": [
+      {"race": 1, "characters": 35, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 2, "characters": 45, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 3, "characters": 26, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 4, "characters": 35, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 5, "characters": 31, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 6, "characters": 25, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 7, "characters": 24, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 8, "characters": 27, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 9, "characters": 27, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 10, "characters": 33, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 11, "characters": 31, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 12, "characters": 30, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 13, "characters": 40, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 14, "characters": 3, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 18, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 19, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 20, "characters": 3, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 21, "characters": 3, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 22, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 23, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 28, "characters": 3, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 29, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 30, "characters": 3, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 31, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 43, "characters": 2, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 45, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 46, "characters": 2, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 47, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 48, "characters": 1, "extended": 1, "min_extraAppearance": 43, "max_extraAppearance": 43},
+      {"race": 49, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 51, "characters": 2, "extended": 2, "min_extraAppearance": 14347388583937, "max_extraAppearance": 111355737414930},
+      {"race": 53, "characters": 3, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 54, "characters": 2, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 55, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 56, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 57, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 58, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 59, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 60, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 62, "characters": 2, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 63, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 64, "characters": 2, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 65, "characters": 2, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 66, "characters": 1, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 68, "characters": 2, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0},
+      {"race": 70, "characters": 3, "extended": 0, "min_extraAppearance": 0, "max_extraAppearance": 0}
+    ]
+  },
+  "privacy": {
+    "docker_environment_captured": false,
+    "bind_source_paths_captured": false,
+    "database_credentials_captured": false,
+    "character_rows_captured": false
+  }
+}

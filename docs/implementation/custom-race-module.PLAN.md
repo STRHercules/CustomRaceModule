@@ -2,7 +2,7 @@
 
 Execute against [REQUIREMENTS](custom-race-module.REQUIREMENTS.md),
 [DESIGN](custom-race-module.DESIGN.md) and [EXTRACTION](custom-race-module.EXTRACTION.md).
-I01 is **in progress**; I02–I15 are **not started**. See [execution record](progress.md).
+I01 and I02 are **in progress**; I03–I15 are **not started**. See [execution record](progress.md).
 Proposed output paths are in the new repository unless qualified.
 Creating these documents does not mean their code/artifacts exist. No time estimates replace done criteria.
 
@@ -59,7 +59,7 @@ no active files/services/databases changed. Fresh hashes replace assumptions abo
 
 ## I02 — Reconcile the full identity ledger
 
-- [ ] Status: not started. Requirements: R01, R07, R08, R12. Dependency: I01.
+- [ ] Status: in progress. Requirements: R01, R07, R08, R12. Dependency: I01 baseline evidence is sufficient to begin reconciliation; remaining I01 provenance/profile gaps still block release.
 
 Reconcile registry, allocation, enum, effective ChrRaces/SQL/UI and saved identities. Resolve cases in
 E01, including 24–27, 29–31/67 omissions, 15/62 Sethrak, 61 Ogre/Furbolg, newer Naga/Vrykul and shared
