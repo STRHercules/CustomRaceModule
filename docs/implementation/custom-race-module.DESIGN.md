@@ -1,7 +1,12 @@
-# mod-esteria-races implementation design and contracts
+# mod-custom-races implementation design and contracts
 
 This is the required initial design. Names below are destination contracts to implement, not existing APIs.
 Record any necessary revision with rationale and updated requirements/tests before diverging.
+
+The public name/config is now `mod-custom-races` / `CustomRaces.*`; the
+[standalone direction](../compatibility/coa-reference.md) supersedes the older working name and
+Esteria-only defaults below. Frozen filenames and runtime ABI names retain their source identity until
+their corresponding extraction/generation task deliberately adapts them.
 
 ## Architecture and ownership
 
@@ -11,9 +16,8 @@ Package a frozen Python runtime/launcher for operators if Python is not installe
 conversion SDKs in developer tooling only. Native DLLs remain Windows x86; server module is portable.
 
 ```text
-mod-esteria-races/
-  CMakeLists.txt
-  conf/mod_esteria_races.conf.dist
+mod-custom-races/
+  conf/mod_custom_races.conf.dist
   src/loader.h, RacePolicy.*, RaceStartup.*, RaceDiagnostics.*
   src/racials/{Broken,Darkfallen,Worgen}.*
   src/generated/                     # checked generated policies/codecs, not hand edited
@@ -35,9 +39,10 @@ mod-esteria-races/
   release/                          # generated pack manifests; payloads external to Git
 ```
 
-Use loader/CMake registration conventions for the pinned AC revision. Current local precedent is
-`AC_ADD_SCRIPT`, `AC_ADD_SCRIPT_LOADER` and `AC_ADD_CONFIG_FILE`; these are evidence to adapt, not a
-claim about every revision. A module startup diagnostic must reject missing adapter ABI/generated policy
+Use the pinned AC revision's automatic `src/` and `conf/*.conf.dist` discovery and
+`Addmod_custom_racesScripts()` loader. No standalone module CMake project is needed for this pin.
+Historical `AC_ADD_SCRIPT` macros are source evidence, not the public registration mechanism.
+A module startup diagnostic must reject missing adapter ABI/generated policy
 or unresolved declared DBC schema requirements before accepting custom creation.
 
 One lockfile is the source for server identities, native mappings, Glue metadata, DBC/SQL outputs,

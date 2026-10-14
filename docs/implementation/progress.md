@@ -102,3 +102,56 @@ requirements.
 
 I01 and I02 remain **in progress**; I03–I15 have not started. No selected or `all` release can pass the
 current gates.
+
+## October 14, 2026: standalone direction and source installation foundation
+
+The user selected `ilusixn/azerothcore-wotlk-coa`, branch `coa-custom-1.5-csm`, as a structural reference
+while requiring an installable module for general AzerothCore. The reference was fetched at
+`760e404239693625eab940791b7036316adccf05` into a separate checkout. Its actual module/core/data/client
+boundary and portable extraction decisions are recorded in `docs/compatibility/coa-reference.md`.
+
+Public module/config names are now `mod-custom-races` / `CustomRaces.*`. Original Esteria snapshots,
+locks, runtime ABI names and historical document filenames retain their identity and hashes. The old
+module name is not a second loader alias; new installations must use the neutral directory.
+
+Implemented:
+
+- `src/RacePolicy.*`: exact-ID installed/creation sets through RaceID 128, stock/foreign pass-through,
+  master enable/readiness checks, strict narrowing selectors and rejection without selector mutation.
+- `src/mod_custom_races.cpp` / `src/loader.cpp`: standard world/account hook registration, config reload
+  diagnostics and owned creation admission. Invalid selectors disable owned creation. No login or DB mutation.
+- `data/registry/server-policy.json`, `schemas/server-policy.schema.json`, `tools/racepack/policy.py`
+  and `src/generated/RaceDefinitions.h`: strict admission schema, canonical digest, deterministic generation
+  and stale-output checks. The policy is empty/unresolved; no provisional identity is promoted.
+- `integration/acore/source-module.json`: exact upstream revision and five LF-normalized source hashes
+  for hook definitions, dispatcher, creation call site and loader/config discovery. This is not I06's adapter.
+- `tools/racepack/{module,__main__}.py`: `inspect-core`, `stage-module`, `install-module`, `generate-policy`.
+  Staging verifies source copies and publishes a new directory with a deterministic source manifest;
+  installation refuses unsupported/modified source contracts and conflicting/existing race modules.
+  It runs no builds, SQL, binaries, clients or services.
+- Source installation instructions, standalone reference comparison, neutral README and updated plan status.
+
+Checks actually executed:
+
+- `rtk proxy python -m unittest discover -s tests/unit -v`: **31 passed**.
+- `rtk proxy python -m tools.racepack generate-policy --check`: generated policy current.
+- Native CMake configure/build and CTest: **1 compiled policy test passed**, using Visual Studio 18 2026,
+  MSVC 19.50.35730.0 / toolset 14.50.35717 and Windows SDK 10.0.26100.0. This compiler observation applies
+  only to the standalone policy harness and does not replace the baseline's chosen full-build target.
+- Real source staging produced an 11-file source foundation outside the repository. Unit cases verify
+  manifest hashes/readback, determinism, existing-directory refusal, stale generation and core conflicts.
+- A separate sparse upstream checkout at `aa8a04c82ffc315277e93e937b4e6a0d7a6aba58` passed inspection and
+  source installation; a second install was refused. This fixture is only a source installer check.
+- The CoA reference checkout was correctly rejected because its revision/core contract differs and
+  `mod-coa-custom-races` already exists. No writes were made to that reference by the installer.
+
+Reviewable source artifact:
+`R:/Users/Zach/Documents/GitHub/CustomRaceModule-artifacts/mod-custom-races-source`.
+Isolated source installation fixture:
+`R:/Users/Zach/Documents/GitHub/CustomRaceModule-fixtures/upstream-source/modules/mod-custom-races`.
+Neither is a deployable playable-race release. No active Esteria source, service, client or database was changed.
+
+I03 and I05 now have partial foundations in progress, not completed milestones. I01/I02 remain incomplete.
+Species/allocation/codec/release schemas, racial/startup extraction, the upstream core adapter, matched
+client/DBC/SQL/assets, full UI/capacity, complete release installation/rollback and named gameplay acceptance
+remain pending. Full AzerothCore compilation was not run; enabling the source module cannot bypass this.

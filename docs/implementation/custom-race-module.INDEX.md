@@ -1,7 +1,12 @@
-# mod-esteria-races implementation package
+# mod-custom-races implementation package
 
 Status: implementation begun in CustomRaceModule; I01 baseline capture and I02 identity reconciliation are in progress.
-Date: October 14, 2026. Working name: `mod-esteria-races`.
+Date: October 14, 2026. Public name: `mod-custom-races` (previous working name `mod-esteria-races`).
+
+The [CoA reference comparison](../compatibility/coa-reference.md) records the latest product direction:
+ordinary upstream AzerothCore, standard module installation, optional integrations, and Esteria as a
+content/migration profile. Neutral admission/source installation is implemented; I03 and I05 have begun
+with partial foundations. No playable race release exists. Historical filenames/evidence stay intact.
 
 See [execution record](progress.md) and [initial targets](../compatibility/initial-targets.md) for actual
 outputs, checks and unresolved gaps. This preserves the specification; no supported release exists yet.

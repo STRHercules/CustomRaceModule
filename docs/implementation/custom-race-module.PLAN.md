@@ -2,7 +2,9 @@
 
 Execute against [REQUIREMENTS](custom-race-module.REQUIREMENTS.md),
 [DESIGN](custom-race-module.DESIGN.md) and [EXTRACTION](custom-race-module.EXTRACTION.md).
-I01 and I02 are **in progress**; I03–I15 are **not started**. See [execution record](progress.md).
+I01 and I02 are **in progress**; I03 and I05 have **partial foundations in progress**; other tasks
+are **not started**. See [execution record](progress.md) and the
+[standalone product direction](../compatibility/coa-reference.md). No dependency or release gate is bypassed.
 Proposed output paths are in the new repository unless qualified.
 Creating these documents does not mean their code/artifacts exist. No time estimates replace done criteria.
 
@@ -75,7 +77,9 @@ silently reassigned. `all` cannot hide conflicts by dropping entries; unresolved
 
 ## I03 — Implement strict schemas, locks and shared generation foundation
 
-- [ ] Status: not started. Requirements: R07, R08, R10, R14. Dependencies: I01, I02.
+- [ ] Status: partial foundation in progress; admission schema/generator and source installer implemented.
+  Full reconciled allocation/codec/ownership contracts remain pending. Requirements: R07, R08, R10, R14.
+  Dependencies: I01, I02; no playable generation occurs before reconciliation.
 
 Create the isolated module skeleton without configuring/building unless authorized. Match pinned loader/
 CMake/config conventions and preserve licenses. Implement DESIGN schemas, canonical digests, strict
@@ -110,7 +114,9 @@ Full UI assets remain included for subsets. Asset byte checks are recorded separ
 
 ## I05 — Extract module scripts, startup and exact-race policy
 
-- [ ] Status: not started. Requirements: R07, R09, R12, R15. Dependency: I03.
+- [ ] Status: partial admission foundation in progress; owned actual-ID creation narrowing implemented.
+  Reconciled identities, racial/startup extraction and service validation remain pending.
+  Requirements: R07, R09, R12, R15. Dependency: I03.
 
 Split Broken/Darkfallen/Worgen scripts and data per E03, preserving behavior and script names/bindings
 where required. Implement installed/creation-enabled/retained actual-ID policy, per-race class/gender

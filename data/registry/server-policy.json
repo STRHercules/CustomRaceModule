@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "identities": [],
+  "unresolved": [
+    "Identity reconciliation is incomplete; no race is promoted into this server policy.",
+    "The pinned upstream core adapter and matched client/data release are not implemented."
+  ]
+}

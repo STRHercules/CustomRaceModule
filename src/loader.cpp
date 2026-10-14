@@ -1,6 +1,6 @@
-void AddSC_mod_esteria_races();
+void AddSC_mod_custom_races();
 
-void Addmod_esteria_racesScripts()
+void Addmod_custom_racesScripts()
 {
-    AddSC_mod_esteria_races();
+    AddSC_mod_custom_races();
 }

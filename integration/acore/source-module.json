@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "module": "mod-custom-races",
+  "core_target": "aa8a04c82ffc315277e93e937b4e6a0d7a6aba58",
+  "support_status": "source_contract_inspected_full_build_pending",
+  "race_adapter_ready": false,
+  "files": [
+    {
+      "path": "src/server/game/Scripting/ScriptDefines/AccountScript.h",
+      "sha256_lf": "1a186b804881e6aded8ba218bcad63c7d12c99620e22f98fe947c1f7107f558a"
+    },
+    {
+      "path": "src/server/game/Scripting/ScriptDefines/WorldScript.h",
+      "sha256_lf": "64687aad84be128bd9bd5376700bb57f9a430ec6c850fff3adb4f20d1465c859"
+    },
+    {
+      "path": "src/server/game/Handlers/CharacterHandler.cpp",
+      "sha256_lf": "dbefe4dd47c97dc935c9f31a90fc83510f9f6b980a5b3b8d4ac00c6193a8f43a"
+    },
+    {
+      "path": "src/server/game/Scripting/ScriptMgr.cpp",
+      "sha256_lf": "8945da66e4a9efcc55ceaa0b9d916227a16855485886d952491619d9a6c07f40"
+    },
+    {
+      "path": "modules/CMakeLists.txt",
+      "sha256_lf": "7ee2008d9c99f6622a5a7ecf576835a7e5e522c9626a42a24024cc8713a2887f"
+    }
+  ]
+}

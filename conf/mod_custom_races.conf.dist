@@ -1,0 +1,12 @@
+[worldserver]
+
+# mod-custom-races: standalone AzerothCore source module.
+# A matched core adapter, generated data and patched client are also required
+# for playable custom races. The current source foundation cannot activate them.
+CustomRaces.Enable = 0
+
+# Narrow creation within the generated installed identity set:
+# all, none, or comma-separated actual RaceIDs. Unknown/stock/duplicate IDs
+# are invalid. An invalid value disables owned custom creation, including reload.
+# This controls new creation only; existing characters are never modified.
+CustomRaces.CreationRaces = "all"

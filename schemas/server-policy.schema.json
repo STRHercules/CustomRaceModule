@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Custom races server admission policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "identities", "unresolved"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "unresolved": {"type": "array", "items": {"type": "string", "pattern": "\\S"}},
+    "identities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "race_id", "legacy_mask_donor"],
+        "properties": {
+          "key": {"type": "string", "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"},
+          "race_id": {"type": "integer", "minimum": 1, "maximum": 128,
+                      "not": {"enum": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11]}},
+          "legacy_mask_donor": {"type": "integer", "enum": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11]}
+        }
+      }
+    }
+  }
+}

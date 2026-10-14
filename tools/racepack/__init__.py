@@ -1,2 +1,2 @@
-"""Read-only inspection and release tooling for mod-esteria-races."""
+"""Custom race inspection, source installation and release tooling for AzerothCore."""
 

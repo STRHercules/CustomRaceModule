@@ -21,8 +21,10 @@ This selects a concrete adapter target; it does not imply current Esteria modifi
 
 The pinned `modules/CMakeLists.txt` collects module sources and generates an
 `Add<directory-name-with-hyphens-replaced-by-underscores>Scripts()` loader. It auto-discovers
-`conf/*.conf.dist` and optionally includes `<module-directory>.cmake`. Use that revision's conventions
-in I03 rather than assuming the older `AC_ADD_SCRIPT` API. Install-directory naming must match the loader.
+`conf/*.conf.dist` and optionally includes `<module-directory>.cmake`. The public install directory is now
+`modules/mod-custom-races`, using `Addmod_custom_racesScripts()` and `CustomRaces.*` config.
+`integration/acore/source-module.json` pins hook/dispatcher/loader source text hashes for source installation;
+this is not the custom-race adapter or a full-build certification. Install-directory naming must match the loader.
 
 Two explicitly supplied backup executables are identical, SHA-256
 `a6bf4bfed8febdf0d50c345d1851869f91da1d709fe2572b71afa297be881ca7`, with PE machine `0x014c` (x86).

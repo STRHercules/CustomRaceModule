@@ -1,8 +1,13 @@
-# mod-esteria-races implementation requirements
+# mod-custom-races implementation requirements
 
 Status: normative target behavior. This document specifies future implementation; it claims no deployment.
 Use [DESIGN](custom-race-module.DESIGN.md) for technical contracts and
 [VALIDATION](custom-race-module.VALIDATION.md) for requirement evidence.
+
+Public host baseline: ordinary upstream AzerothCore/WotLK classes and progression. CoA, Ascension,
+playerbots, server-manager and repack behavior are optional integration profiles, never prerequisites.
+Esteria remains a source-content and preservation/migration profile. See the
+[pinned reference comparison](../compatibility/coa-reference.md).
 
 ## Required product
 
@@ -50,7 +55,8 @@ Preserve ECS real-index selection, filtering/reorder/notes, current login scenes
 customization dropdown preview/cancel/commit, dependencies/randomization and stock-race resets.
 Race selection changes metadata and available identities, not whether those shared features are installed.
 
-Esteria logos are the defaults. Allow different image inputs for login and select, one input shared by
+Provide neutral replaceable defaults for general hosts; Esteria logos belong to its content/migration
+profile. Default artwork implementation is pending. Allow different image inputs for login and select, one input shared by
 both, and explicit rendered dimensions/anchors/offsets preserving aspect/transparency. Generate supported
 BLP/TGA and dedicated bindings; never globally replace a shared Wrath-logo texture used by other dialogs.
 Rebranding is a UI-only update preserving race/appearance/DB state.

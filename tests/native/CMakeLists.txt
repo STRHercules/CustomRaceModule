@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(CustomRacePolicyTests LANGUAGES CXX)
+enable_testing()
+add_executable(race_policy_test RacePolicyTest.cpp ../../src/RacePolicy.cpp)
+target_include_directories(race_policy_test PRIVATE ../../src)
+target_compile_features(race_policy_test PRIVATE cxx_std_20)
+add_test(NAME race_policy COMMAND race_policy_test)
